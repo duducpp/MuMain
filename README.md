@@ -55,8 +55,17 @@ What needs to be done for Season 6:
 ## How to build & run
 
 It requires:
-  * Visual Studio 2022 with the newest update, workloads for C++ and C#
-  * A compatible server: [OpenMU](https://github.com/MUnique/OpenMU).
+  - [Visual Studio 2022 with the newest update, workloads for C++ and C#](https://visualstudio.microsoft.com/pt-br/vs/community/)
+  - [CMake](https://cmake.org/download/)
+  - A compatible server: [OpenMU](https://github.com/MUnique/OpenMU).
+  
+### Building with CMake (Windows)
+
+```sh
+cmake -S . -B build -G "Visual Studio 17 2022" -A Win32
+```
+
+Visual Studio solution(`MuMain.sln`) will be generated in `build` folder.
 
 ### Building with CMake and MinGW-w64 (Linux)
 
@@ -65,11 +74,9 @@ from Linux using a MinGW-w64 toolchain.
 
 **Prerequisites**
 
-  * A working MinGW-w64 toolchain (for example `i686-w64-mingw32-g++`).
-  * A MinGW-w64 build of libjpeg-turbo which provides a `libturbojpeg` library
-    (static or import library) on the library search path of your toolchain.
-  * Standard Windows / OpenGL libraries shipped with MinGW-w64 (e.g. `opengl32`,
-    `glu32`, `winmm`, `imm32`, `ws2_32`, etc.).
+  - A working MinGW-w64 toolchain (for example `i686-w64-mingw32-g++`).
+  - A MinGW-w64 build of libjpeg-turbo which provides a `libturbojpeg` library (static or import library) on the library search path of your toolchain.
+  - Standard Windows / OpenGL libraries shipped with MinGW-w64 (e.g. `opengl32`, `glu32`, `winmm`, `imm32`, `ws2_32`, etc.).
 
 **Example build commands**
 

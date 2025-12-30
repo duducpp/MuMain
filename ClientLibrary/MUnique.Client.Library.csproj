@@ -11,10 +11,12 @@
     <OptimizationPreference>Speed</OptimizationPreference>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <WarningsAsErrors>nullable;CS4014;VSTHRD110;VSTHRD100</WarningsAsErrors>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <Configurations>Release;Debug;</Configurations>
+	<PublishOnBuild>true</PublishOnBuild>
+	<PublishProfile>FolderProfile</PublishProfile>
   </PropertyGroup>
 
   <ItemGroup>
