@@ -11,7 +11,7 @@
 #include "ZzzOpenData.h"
 #include "ZzzLodTerrain.h"
 #include "GOBoid.h"
-#include "NewUISystem.h"
+#include "NewUI/System.h"
 #include "MapManager.h"
 
 

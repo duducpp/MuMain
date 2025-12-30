@@ -16,8 +16,8 @@
 #include "DSPlaySound.h"
 #include "ZzzOpenData.h"
 #include "UIControls.h"
-#include "NewUISystem.h"
-#include "NewUIInventoryCtrl.h"
+#include "NewUI/System.h"
+#include "NewUI/InventoryCtrl.h"
 #include "MapManager.h"
 
 

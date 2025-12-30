@@ -7,8 +7,8 @@
 
 #include "UIGuildInfo.h"
 #include "UIGuardsMan.h"
-#include "NewUIMyInventory.h"
-#include "NewUISystem.h"
+#include "NewUI/MyInventory.h"
+#include "NewUI/System.h"
 
 CUIGuardsMan g_GuardsMan;
 

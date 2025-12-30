@@ -14,7 +14,7 @@
 #include "ZzzScene.h"
 #include "DSPlaySound.h"
 #include "UIControls.h"
-#include "NewUISystem.h"
+#include "NewUI/System.h"
 
 #define	OW_BTN_GAP		25
 #define	OW_SLD_GAP		48

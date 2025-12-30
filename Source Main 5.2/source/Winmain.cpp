@@ -50,7 +50,7 @@
 
 
 
-#include "NewUISystem.h"
+#include "NewUI/System.h"
 
 CUIMercenaryInputBox* g_pMercenaryInputBox = nullptr;
 CUITextInputBox* g_pSingleTextInputBox = nullptr;

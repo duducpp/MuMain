@@ -15,7 +15,7 @@
 #include "CSChaosCastle.h"
 #include "MapManager.h"
 #include "CharacterManager.h"
-#include "NewUISystem.h"
+#include "NewUI/System.h"
 #include "SkillManager.h"
 
 extern void MonsterMoveSandSmoke(OBJECT* o);

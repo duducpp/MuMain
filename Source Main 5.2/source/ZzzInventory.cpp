@@ -33,13 +33,13 @@
 #include "CDirection.h"
 #include "ChangeRingManager.h"
 #include "MixMgr.h"
-#include "NewUICommonMessageBox.h"
-#include "NewUICustomMessageBox.h"
-#include "NewUIInventoryCtrl.h"
+#include "NewUI/CommonMessageBox.h"
+#include "NewUI/CustomMessageBox.h"
+#include "NewUI/InventoryCtrl.h"
 #include "w_CursedTemple.h"
 #include "SocketSystem.h"
 #include "PortalMgr.h"
-#include "NewUISystem.h"
+#include "NewUI/System.h"
 #include "ServerListManager.h"
 #include <time.h>
 #include <unordered_set>
@@ -47,7 +47,7 @@
 #include "MapManager.h"
 #include "CharacterManager.h"
 #include "SkillManager.h"
-#include "NewUISystem.h"
+#include "NewUI/System.h"
 
 extern CUITextInputBox* g_pSingleTextInputBox;
 extern int g_iChatInputType;

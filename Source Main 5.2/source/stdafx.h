@@ -93,7 +93,7 @@
 #include "_GlobalFunctions.h"
 #include "_TextureIndex.h"
 #include "UIDefaultBase.h"
-#include "NewUICommon.h"
+#include "NewUI/Common.h"
 #include "./Math/ZzzMathLib.h"
 #include "ZzzOpenglUtil.h"
 
