@@ -110,6 +110,12 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <OutputFile>.\tmp/Global_Debug/Main.bsc</OutputFile>
     </Bscmake>
+    <PreBuildEvent>
+      <Command>echo Running clang-format on source files...
+for /R "$(ProjectDir)" %%f in (*.c *.h *.cpp *.hpp *.cxx *.hxx *.ixx) do (
+    "$(DevEnvDir)..\..\VC\Tools\Llvm\bin\clang-format.exe" -i "%%f" --style="file:$(SolutionDir).clang-format"
+)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
@@ -164,6 +170,12 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <OutputFile>.\tmp/Global_Release/Main.bsc</OutputFile>
     </Bscmake>
+    <PreBuildEvent>
+      <Command>echo Running clang-format on source files...
+for /R "$(ProjectDir)" %%f in (*.c *.h *.cpp *.hpp *.cxx *.hxx *.ixx) do (
+    "$(DevEnvDir)..\..\VC\Tools\Llvm\bin\clang-format.exe" -i "%%f" --style="file:$(SolutionDir).clang-format"
+)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <Image Include="icon1.ico" />
