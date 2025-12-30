@@ -4,9 +4,6 @@
 //
 #define VS_VERSION_INFO_BLUE            1
 #define IDI_ICON1                       101
-#define IDD_DIALOG1                     112
-#define IDI_ICON2                       159
-#define IDD_DIALOG2                     166
 
 // Next default values for new objects
 //
