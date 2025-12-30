@@ -507,7 +507,6 @@
     <ClCompile Include="_GlobalFunctions.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="afxres.h" />
     <ClInclude Include="dependencies\include\span.hpp" />
     <ClInclude Include="CharInfoBalloonMng.h" />
     <ClInclude Include="Dotnet\PacketBindings_ChatServer.h" />
@@ -749,6 +748,7 @@
     <ClInclude Include="PList.h" />
     <ClInclude Include="PortalMgr.h" />
     <ClInclude Include="QuestMng.h" />
+    <ClInclude Include="Random.h" />
     <ClInclude Include="ReadScript.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="ServerGroup.h" />

@@ -1125,9 +1125,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="afxres.h">
-      <Filter>Resource Files</Filter>
-    </ClInclude>
     <ClInclude Include="dependencies\include\span.hpp">
       <Filter>External Object</Filter>
     </ClInclude>
@@ -2119,6 +2116,9 @@
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="_crypt.h">
+      <Filter>MU\Client\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
