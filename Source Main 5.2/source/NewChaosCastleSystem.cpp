@@ -12,10 +12,10 @@ using namespace SEASON3B;
 #include "ZzzTexture.h"
 #include "ZzzLodTerrain.h"
 #include "ZzzScene.h"
-#include "NewUICustomMessageBox.h"
+#include "NewUI/CustomMessageBox.h"
 #include "MapManager.h"
 #include "DSPlaySound.h"
-#include "NewUISystem.h"
+#include "NewUI/System.h"
 
 extern int g_iChatInputType;
 extern int g_iCustomMessageBoxButton[NUM_BUTTON_CMB][NUM_PAR_BUTTON_CMB];

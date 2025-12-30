@@ -15,7 +15,7 @@
 #include "ZzzScene.h"
 
 #include "DSPlaySound.h"
-#include "NewUISystem.h"
+#include "NewUI/System.h"
 
 
 #include "ServerListManager.h"

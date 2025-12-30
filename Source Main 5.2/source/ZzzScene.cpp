@@ -42,8 +42,8 @@
 #include "Event.h"
 #include "MixMgr.h"
 
-#include "NewUISystem.h"
-#include "NewUICommonMessageBox.h"
+#include "NewUI/System.h"
+#include "NewUI/CommonMessageBox.h"
 #include "PartyManager.h"
 #include "w_CursedTemple.h"
 #include "CameraMove.h"

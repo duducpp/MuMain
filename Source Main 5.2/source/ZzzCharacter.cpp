@@ -45,7 +45,7 @@
 #include "w_PetProcess.h"
 #include "DuelMgr.h"
 #include "MonkSystem.h"
-#include <NewUISystem.h>
+#include "NewUI/System.h"
 
 CHARACTER* CharactersClient;
 CHARACTER CharacterView;

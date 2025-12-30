@@ -23,7 +23,7 @@
 #include "MapManager.h"
 #include "Event.h"
 #include "ChangeRingManager.h"
-#include "NewUISystem.h"
+#include "NewUI/System.h"
 #include "CameraMove.h"
 #include "QuestMng.h"
 #include "ServerListManager.h"

@@ -9,7 +9,7 @@
 #include "UIManager.h"
 #include "UIGuildInfo.h"
 #include "CSParts.h"
-#include "NewUICommonMessageBox.h"
+#include "NewUI/CommonMessageBox.h"
 #include "CharacterManager.h"
 #include "DSPlaySound.h"
 #include "ZzzInventory.h"

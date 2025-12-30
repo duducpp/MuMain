@@ -16,7 +16,7 @@
 #include "MapManager.h"
 #include "CharacterManager.h"
 #include "DSPlaySound.h"
-#include "NewUISystem.h"
+#include "NewUI/System.h"
 
 
 

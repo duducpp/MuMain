@@ -10,8 +10,8 @@
 #include "ZzzAI.h"
 #include "CSEventMatch.h"
 
-#include "NewUICustomMessageBox.h"
-#include "NewUISystem.h"
+#include "NewUI/CustomMessageBox.h"
+#include "NewUI/System.h"
 
 #include <algorithm>
 #include <chrono>

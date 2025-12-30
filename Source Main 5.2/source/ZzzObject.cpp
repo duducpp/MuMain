@@ -31,7 +31,7 @@
 #include "CharacterManager.h"
 #include "w_MapHeaders.h"
 #include "MonkSystem.h"
-#include "NewUISystem.h"
+#include "NewUI/System.h"
 
 extern vec3_t VertexTransform[MAX_MESH][MAX_VERTICES];
 extern vec3_t LightTransform[MAX_MESH][MAX_VERTICES];

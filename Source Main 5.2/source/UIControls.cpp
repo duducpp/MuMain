@@ -18,7 +18,7 @@
 #include "ReadScript.h"
 #include "CMVP1stDirection.h"
 #include "UIManager.h"
-#include "NewUISystem.h"
+#include "NewUI/System.h"
 
 extern BYTE m_CrywolfState;
 
