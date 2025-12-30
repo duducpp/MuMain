@@ -1120,6 +1120,9 @@
     <ClCompile Include="source\CharInfoBalloonMng.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\Random.cpp">
+      <Filter>MU\Client\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\Button.h">
