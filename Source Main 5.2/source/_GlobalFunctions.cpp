@@ -5,22 +5,25 @@
 bool g_bRenderBoundingBox = false;
 #endif // CSK_DEBUG_RENDER_BOUNDINGBOX
 
-BuffStateSystemPtr			g_BuffSystem;
+BuffStateSystemPtr g_BuffSystem;
 
 BuffStateSystem& TheBuffStateSystem()
 {
-    assert(g_BuffSystem);
-    return *g_BuffSystem;
+  assert( g_BuffSystem );
+  return *g_BuffSystem;
 }
 
-BuffScriptLoader& TheBuffInfo() {
-    return TheBuffStateSystem().GetBuffInfo();
+BuffScriptLoader& TheBuffInfo()
+{
+  return TheBuffStateSystem().GetBuffInfo();
 }
 
-BuffTimeControl& TheBuffTimeControl() {
-    return TheBuffStateSystem().GetBuffTimeControl();
+BuffTimeControl& TheBuffTimeControl()
+{
+  return TheBuffStateSystem().GetBuffTimeControl();
 }
 
-BuffStateValueControl& TheBuffStateValueControl() {
-    return TheBuffStateSystem().GetBuffStateValueControl();
+BuffStateValueControl& TheBuffStateValueControl()
+{
+  return TheBuffStateSystem().GetBuffStateValueControl();
 }

@@ -2,16 +2,17 @@
 
 #include <memory>
 
-class CpuUsage {
+class CpuUsage
+{
 public:
-    static CpuUsage* Instance();
+  static CpuUsage* Instance();
 
-    double GetUsage();
+  double GetUsage();
 
 private:
-    CpuUsage();
-    ~CpuUsage();
+  CpuUsage();
+  ~CpuUsage();
 
-    class Impl;                  // Forward declaration of the implementation
-    std::unique_ptr<Impl> pImpl; // Pointer to implementation
+  class Impl;                  // Forward declaration of the implementation
+  std::unique_ptr<Impl> pImpl; // Pointer to implementation
 };

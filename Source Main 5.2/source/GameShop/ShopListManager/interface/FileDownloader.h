@@ -1,9 +1,9 @@
 /*******************************************************************************
-*	�� �� �� : ������
-*	�� �� �� : 2009.06.10
-*	��    �� : FileDownloader
-*				File ���� �ٿ�ε� ��� ����
-*******************************************************************************/
+ *	�� �� �� : ������
+ *	�� �� �� : 2009.06.10
+ *	��    �� : FileDownloader
+ *				File ���� �ٿ�ε� ��� ����
+ *******************************************************************************/
 
 #pragma once
 
@@ -13,76 +13,74 @@
 class FileDownloader
 {
 public:
-    // Constructor, Destructor
+  // Constructor, Destructor
 
-    FileDownloader(IDownloaderStateEvent* pStateEvent,
-        DownloadServerInfo* pServerInfo,
-        DownloadFileInfo* pFileInfo);
-    ~FileDownloader();
+  FileDownloader( IDownloaderStateEvent* pStateEvent, DownloadServerInfo* pServerInfo, DownloadFileInfo* pFileInfo );
+  ~FileDownloader();
 
-    // public Function
+  // public Function
 
-        //					�ٿ�ε� ����
-    void				Break();
-    //					������ ���� �ٿ�ε� ���� : ����, Ŀ��Ʈ, ���� ���� ��� ó��
-    WZResult			DownloadFile();
+  //					�ٿ�ε� ����
+  void Break();
+  //					������ ���� �ٿ�ε� ���� : ����, Ŀ��Ʈ, ���� ���� ��� ó��
+  WZResult DownloadFile();
 
 private:
-    // private Function
+  // private Function
 
-        //					���� ����
-    BOOL				CanBeContinue();
-    //					������
-    void				Release();
+  //					���� ����
+  BOOL CanBeContinue();
+  //					������
+  void Release();
 
-    //					Ŀ���� ����
-    IConnecter* CreateConnecter();
-    //					���� ó��
-    WZResult 			CreateConnection();
-    static unsigned int __stdcall RunConnectThread(LPVOID pParam);
-    WZResult 			Connection();
+  //					Ŀ���� ����
+  IConnecter* CreateConnecter();
+  //					���� ó��
+  WZResult CreateConnection();
+  static unsigned int __stdcall RunConnectThread( LPVOID pParam );
+  WZResult Connection();
 
-    //					���� ó��
-    WZResult 			TransferRemoteFile();
+  //					���� ó��
+  WZResult TransferRemoteFile();
 
-    //					���� ���� ����
-    WZResult 			CreateLocalFile();
-    //					�ٿ�ε� ���� �б�
-    WZResult 			ReadRemoteFile(BYTE* byReadBuffer, DWORD* dwBytesRead);
-    //					���� ���� ����
-    WZResult 			WriteLocalFile(BYTE* byReadBuffer, DWORD dwBytesRead);
+  //					���� ���� ����
+  WZResult CreateLocalFile();
+  //					�ٿ�ε� ���� �б�
+  WZResult ReadRemoteFile( BYTE* byReadBuffer, DWORD* dwBytesRead );
+  //					���� ���� ����
+  WZResult WriteLocalFile( BYTE* byReadBuffer, DWORD dwBytesRead );
 
-    //					�ٿ�ε� ���� �̺�Ʈ ������
-    void				SendStartedDownloadFileEvent(ULONGLONG nFileLength);
-    //					�ٿ�ε� �Ϸ� �̺�Ʈ ������
-    void				SendCompletedDownloadFileEvent(WZResult wzResult);
-    //					�ٿ�ε� ���� ��Ȳ �̺�Ʈ ������ : ��Ŷ ����
-    void				SendProgressDownloadFileEvent(ULONGLONG nTotalBytesRead);
+  //					�ٿ�ε� ���� �̺�Ʈ ������
+  void SendStartedDownloadFileEvent( ULONGLONG nFileLength );
+  //					�ٿ�ε� �Ϸ� �̺�Ʈ ������
+  void SendCompletedDownloadFileEvent( WZResult wzResult );
+  //					�ٿ�ε� ���� ��Ȳ �̺�Ʈ ������ : ��Ŷ ����
+  void SendProgressDownloadFileEvent( ULONGLONG nTotalBytesRead );
 
-    // Member Object
+  // Member Object
 
-        //							�ٿ�ε� ���� �÷���
-    volatile BOOL				m_bBreak;
-    //							���..
-    WZResult 					m_Result;
+  //							�ٿ�ε� ���� �÷���
+  volatile BOOL m_bBreak;
+  //							���..
+  WZResult m_Result;
 
-    //							�ٿ�ε� ���� �̺�Ʈ ���� ��ü
-    IDownloaderStateEvent* m_pStateEvent;
-    //							�ٿ�ε� ���� ���� ��ü
-    DownloadServerInfo* m_pServerInfo;
-    //							�ٿ�ε� ���� ���� ��ü
-    DownloadFileInfo* m_pFileInfo;
-    //							Ŀ����
-    IConnecter* m_pConnecter;
+  //							�ٿ�ε� ���� �̺�Ʈ ���� ��ü
+  IDownloaderStateEvent* m_pStateEvent;
+  //							�ٿ�ε� ���� ���� ��ü
+  DownloadServerInfo* m_pServerInfo;
+  //							�ٿ�ε� ���� ���� ��ü
+  DownloadFileInfo* m_pFileInfo;
+  //							Ŀ����
+  IConnecter* m_pConnecter;
 
-    //							WinINet ���� �ڵ�
-    HINTERNET					m_hSession;
-    //							WinINet Ŀ���� �ڵ�
-    HINTERNET					m_hConnection;
-    //							���� ���� �ڵ�
-    HINTERNET					m_hRemoteFile;
-    //							���� ���� �ڵ�
-    HANDLE						m_hLocalFile;
-    //							���� ������
-    ULONGLONG					m_nFileLength;
+  //							WinINet ���� �ڵ�
+  HINTERNET m_hSession;
+  //							WinINet Ŀ���� �ڵ�
+  HINTERNET m_hConnection;
+  //							���� ���� �ڵ�
+  HINTERNET m_hRemoteFile;
+  //							���� ���� �ڵ�
+  HANDLE m_hLocalFile;
+  //							���� ������
+  ULONGLONG m_nFileLength;
 };

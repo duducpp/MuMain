@@ -2,53 +2,53 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_NEWUIDUELWINDOW_H__446BA52D_E675_4B70_8A9B_65A672B9FBEB__INCLUDED_)
+#if !defined( AFX_NEWUIDUELWINDOW_H__446BA52D_E675_4B70_8A9B_65A672B9FBEB__INCLUDED_ )
 #define AFX_NEWUIDUELWINDOW_H__446BA52D_E675_4B70_8A9B_65A672B9FBEB__INCLUDED_
 
 #pragma once
 
 #include "NewUI/Manager.h"
 
-namespace SEASON3B
+namespace SEASON3B {
+class CNewUIDuelWindow : public CNewUIObj
 {
-    class CNewUIDuelWindow : public CNewUIObj
-    {
-    private:
-        enum IMAGE_LIST
-        {
-            IMAGE_DUEL_BACK = BITMAP_INTERFACE_NEW_BATTLE_SOCCER_SCORE_BEGIN,
-        };
-        enum
-        {
-            DUEL_WND_WIDTH = 131,
-            DUEL_WND_HEIGHT = 70,
-        };
-    public:
-        CNewUIDuelWindow();
-        virtual ~CNewUIDuelWindow();
+private:
+  enum IMAGE_LIST
+  {
+    IMAGE_DUEL_BACK = BITMAP_INTERFACE_NEW_BATTLE_SOCCER_SCORE_BEGIN,
+  };
+  enum
+  {
+    DUEL_WND_WIDTH  = 131,
+    DUEL_WND_HEIGHT = 70,
+  };
 
-        bool Create(CNewUIManager* pNewUIMng, int x, int y);
-        void Release();
+public:
+  CNewUIDuelWindow();
+  virtual ~CNewUIDuelWindow();
 
-        void SetPos(int x, int y);
+  bool Create( CNewUIManager* pNewUIMng, int x, int y );
+  void Release();
 
-        bool UpdateMouseEvent();
-        bool UpdateKeyEvent();
-        bool Update();
-        bool Render();
+  void SetPos( int x, int y );
 
-        float GetLayerDepth();	//. 1.1f
+  bool UpdateMouseEvent();
+  bool UpdateKeyEvent();
+  bool Update();
+  bool Render();
 
-    private:
-        void LoadImages();
-        void UnloadImages();
+  float GetLayerDepth(); //. 1.1f
 
-        void RenderFrame();
-        void RenderContents();
+private:
+  void LoadImages();
+  void UnloadImages();
 
-        CNewUIManager* m_pNewUIMng;		// UI 매니저.
-        POINT m_Pos;					// 창의 위치.
-    };
+  void RenderFrame();
+  void RenderContents();
+
+  CNewUIManager* m_pNewUIMng; // UI 매니저.
+  POINT          m_Pos;       // 창의 위치.
+};
 }
 
 #endif // !defined(AFX_NEWUIDUELWINDOW_H__446BA52D_E675_4B70_8A9B_65A672B9FBEB__INCLUDED_)

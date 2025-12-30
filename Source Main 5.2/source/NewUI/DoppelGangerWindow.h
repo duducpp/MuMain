@@ -7,71 +7,73 @@
 #include "NewUI/MyInventory.h"
 #include "NewUI/MyQuestInfoWindow.h"
 
-namespace SEASON3B
+namespace SEASON3B {
+class CNewUIDoppelGangerWindow
+    : public CNewUIObj
+    , public INewUI3DRenderObj
 {
-    class CNewUIDoppelGangerWindow : public CNewUIObj, public INewUI3DRenderObj
-    {
-    public:
-        enum IMAGE_LIST
-        {
-            IMAGE_DOPPELGANGERWINDOW_BACK = CNewUIMessageBoxMng::IMAGE_MSGBOX_BACK,	// Reference
-            IMAGE_DOPPELGANGERWINDOW_TOP = CNewUIMyInventory::IMAGE_INVENTORY_BACK_TOP,
-            IMAGE_DOPPELGANGERWINDOW_LEFT = CNewUIMyInventory::IMAGE_INVENTORY_BACK_LEFT,
-            IMAGE_DOPPELGANGERWINDOW_RIGHT = CNewUIMyInventory::IMAGE_INVENTORY_BACK_RIGHT,
-            IMAGE_DOPPELGANGERWINDOW_BOTTOM = CNewUIMyInventory::IMAGE_INVENTORY_BACK_BOTTOM,
-            IMAGE_DOPPELGANGERWINDOW_BUTTON = CNewUIMessageBoxMng::IMAGE_MSGBOX_BTN_EMPTY_VERY_SMALL,
-            IMAGE_DOPPELGANGERWINDOW_LINE = CNewUIMyQuestInfoWindow::IMAGE_MYQUEST_LINE,
-        };
-    private:
-        enum
-        {
-            INVENTORY_WIDTH = 190,
-            INVENTORY_HEIGHT = 429,
-        };
+public:
+  enum IMAGE_LIST
+  {
+    IMAGE_DOPPELGANGERWINDOW_BACK   = CNewUIMessageBoxMng::IMAGE_MSGBOX_BACK, // Reference
+    IMAGE_DOPPELGANGERWINDOW_TOP    = CNewUIMyInventory::IMAGE_INVENTORY_BACK_TOP,
+    IMAGE_DOPPELGANGERWINDOW_LEFT   = CNewUIMyInventory::IMAGE_INVENTORY_BACK_LEFT,
+    IMAGE_DOPPELGANGERWINDOW_RIGHT  = CNewUIMyInventory::IMAGE_INVENTORY_BACK_RIGHT,
+    IMAGE_DOPPELGANGERWINDOW_BOTTOM = CNewUIMyInventory::IMAGE_INVENTORY_BACK_BOTTOM,
+    IMAGE_DOPPELGANGERWINDOW_BUTTON = CNewUIMessageBoxMng::IMAGE_MSGBOX_BTN_EMPTY_VERY_SMALL,
+    IMAGE_DOPPELGANGERWINDOW_LINE   = CNewUIMyQuestInfoWindow::IMAGE_MYQUEST_LINE,
+  };
 
-        CNewUIManager* m_pNewUIMng;
-        CNewUI3DRenderMng* m_pNewUI3DRenderMng;
-        POINT m_Pos;
+private:
+  enum
+  {
+    INVENTORY_WIDTH  = 190,
+    INVENTORY_HEIGHT = 429,
+  };
 
-        CNewUIButton m_BtnEnter;
-        CNewUIButton m_BtnClose;
+  CNewUIManager*     m_pNewUIMng;
+  CNewUI3DRenderMng* m_pNewUI3DRenderMng;
+  POINT              m_Pos;
 
-    public:
-        CNewUIDoppelGangerWindow();
-        virtual ~CNewUIDoppelGangerWindow();
+  CNewUIButton m_BtnEnter;
+  CNewUIButton m_BtnClose;
 
-        bool Create(CNewUIManager* pNewUIMng, CNewUI3DRenderMng* pNewUI3DRenderMng, int x, int y);
-        void Release();
+public:
+  CNewUIDoppelGangerWindow();
+  virtual ~CNewUIDoppelGangerWindow();
 
-        void SetPos(int x, int y);
+  bool Create( CNewUIManager* pNewUIMng, CNewUI3DRenderMng* pNewUI3DRenderMng, int x, int y );
+  void Release();
 
-        bool UpdateMouseEvent();
-        bool UpdateKeyEvent();
-        bool Update();
-        bool Render();
-        void Render3D();
+  void SetPos( int x, int y );
 
-        bool IsVisible() const;
+  bool UpdateMouseEvent();
+  bool UpdateKeyEvent();
+  bool Update();
+  bool Render();
+  void Render3D();
 
-        void OpeningProcess();
-        void ClosingProcess();
+  bool IsVisible() const;
 
-        float GetLayerDepth();	//. 5.0f
+  void OpeningProcess();
+  void ClosingProcess();
 
-        void SetRemainTime(int iTime);
-        void LockEnterButton(BOOL bLock);
+  float GetLayerDepth(); //. 5.0f
 
-    private:
-        void LoadImages();
-        void UnloadImages();
+  void SetRemainTime( int iTime );
+  void LockEnterButton( BOOL bLock );
 
-        void RenderFrame();
-        bool BtnProcess();
-        void RenderItem3D();
+private:
+  void LoadImages();
+  void UnloadImages();
 
-        void InitButton(CNewUIButton* pNewUIButton, int iPos_x, int iPos_y, const wchar_t* pCaption);
+  void RenderFrame();
+  bool BtnProcess();
+  void RenderItem3D();
 
-        int m_iRemainTime;
-        BOOL m_bIsEnterButtonLocked;
-    };
+  void InitButton( CNewUIButton* pNewUIButton, int iPos_x, int iPos_y, const wchar_t* pCaption );
+
+  int  m_iRemainTime;
+  BOOL m_bIsEnterButtonLocked;
+};
 }

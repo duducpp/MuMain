@@ -9,59 +9,60 @@
 #include "NewUI/MyInventory.h"
 #include "NewUI/MyQuestInfoWindow.h"
 
-namespace SEASON3B
+namespace SEASON3B {
+class CNewUIDuelWatchWindow : public CNewUIObj
 {
-    class CNewUIDuelWatchWindow : public CNewUIObj
-    {
-    public:
-        enum IMAGE_LIST
-        {
-            IMAGE_DUELWATCHWINDOW_BACK = CNewUIMessageBoxMng::IMAGE_MSGBOX_BACK,	// Reference
-            IMAGE_DUELWATCHWINDOW_TOP = CNewUIMyInventory::IMAGE_INVENTORY_BACK_TOP,
-            IMAGE_DUELWATCHWINDOW_LEFT = CNewUIMyInventory::IMAGE_INVENTORY_BACK_LEFT,
-            IMAGE_DUELWATCHWINDOW_RIGHT = CNewUIMyInventory::IMAGE_INVENTORY_BACK_RIGHT,
-            IMAGE_DUELWATCHWINDOW_BOTTOM = CNewUIMyInventory::IMAGE_INVENTORY_BACK_BOTTOM,
-            IMAGE_DUELWATCHWINDOW_BUTTON = CNewUIMessageBoxMng::IMAGE_MSGBOX_BTN_EMPTY_VERY_SMALL,
-            IMAGE_DUELWATCHWINDOW_LINE = CNewUIMyQuestInfoWindow::IMAGE_MYQUEST_LINE,
-        };
-    private:
-        enum
-        {
-            INVENTORY_WIDTH = 190,
-            INVENTORY_HEIGHT = 429,
-        };
+public:
+  enum IMAGE_LIST
+  {
+    IMAGE_DUELWATCHWINDOW_BACK   = CNewUIMessageBoxMng::IMAGE_MSGBOX_BACK, // Reference
+    IMAGE_DUELWATCHWINDOW_TOP    = CNewUIMyInventory::IMAGE_INVENTORY_BACK_TOP,
+    IMAGE_DUELWATCHWINDOW_LEFT   = CNewUIMyInventory::IMAGE_INVENTORY_BACK_LEFT,
+    IMAGE_DUELWATCHWINDOW_RIGHT  = CNewUIMyInventory::IMAGE_INVENTORY_BACK_RIGHT,
+    IMAGE_DUELWATCHWINDOW_BOTTOM = CNewUIMyInventory::IMAGE_INVENTORY_BACK_BOTTOM,
+    IMAGE_DUELWATCHWINDOW_BUTTON = CNewUIMessageBoxMng::IMAGE_MSGBOX_BTN_EMPTY_VERY_SMALL,
+    IMAGE_DUELWATCHWINDOW_LINE   = CNewUIMyQuestInfoWindow::IMAGE_MYQUEST_LINE,
+  };
 
-        CNewUIManager* m_pNewUIMng;
-        POINT m_Pos;
+private:
+  enum
+  {
+    INVENTORY_WIDTH  = 190,
+    INVENTORY_HEIGHT = 429,
+  };
 
-        CNewUIButton m_BtnChannel[4];
-        BOOL m_bChannelEnable[4];
-    public:
-        CNewUIDuelWatchWindow();
-        virtual ~CNewUIDuelWatchWindow();
+  CNewUIManager* m_pNewUIMng;
+  POINT          m_Pos;
 
-        bool Create(CNewUIManager* pNewUIMng, int x, int y);
-        void Release();
+  CNewUIButton m_BtnChannel[4];
+  BOOL         m_bChannelEnable[4];
 
-        void SetPos(int x, int y);
+public:
+  CNewUIDuelWatchWindow();
+  virtual ~CNewUIDuelWatchWindow();
 
-        bool UpdateMouseEvent();
-        bool UpdateKeyEvent();
-        bool Update();
-        bool Render();
+  bool Create( CNewUIManager* pNewUIMng, int x, int y );
+  void Release();
 
-        void OpeningProcess();
-        void ClosingProcess();
+  void SetPos( int x, int y );
 
-        float GetLayerDepth();	//. 5.0f
+  bool UpdateMouseEvent();
+  bool UpdateKeyEvent();
+  bool Update();
+  bool Render();
 
-    private:
-        void LoadImages();
-        void UnloadImages();
+  void OpeningProcess();
+  void ClosingProcess();
 
-        void RenderFrame();
-        bool BtnProcess();
+  float GetLayerDepth(); //. 5.0f
 
-        void InitButton(CNewUIButton* pNewUIButton, int iPos_x, int iPos_y, const wchar_t* pCaption);
-    };
+private:
+  void LoadImages();
+  void UnloadImages();
+
+  void RenderFrame();
+  bool BtnProcess();
+
+  void InitButton( CNewUIButton* pNewUIButton, int iPos_x, int iPos_y, const wchar_t* pCaption );
+};
 }

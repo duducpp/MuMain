@@ -1,8 +1,8 @@
 /*******************************************************************************
-*	�� �� �� : ������
-*	�� �� �� : 2009.07.07
-*	��    �� : HTTP Connecter
-*******************************************************************************/
+ *	�� �� �� : ������
+ *	�� �� �� : 2009.07.07
+ *	��    �� : HTTP Connecter
+ *******************************************************************************/
 
 #pragma once
 
@@ -11,25 +11,19 @@
 class HTTPConnecter : public IConnecter
 {
 public:
-    // Constructor, Destructor
+  // Constructor, Destructor
 
-    HTTPConnecter(DownloadServerInfo* pServerInfo,
-        DownloadFileInfo* pFileInfo);
-    ~HTTPConnecter();
+  HTTPConnecter( DownloadServerInfo* pServerInfo, DownloadFileInfo* pFileInfo );
+  ~HTTPConnecter();
 
-    // abstract Function
+  // abstract Function
 
-        //						����
-    virtual WZResult		CreateSession(HINTERNET& hSession);
-    //						Ŀ��Ʈ
-    virtual WZResult		CreateConnection(HINTERNET& hSession,
-        HINTERNET& hConnection);
-    //						�ٿ�ε� ���� ���� & ������ ��������
-    virtual WZResult		OpenRemoteFile(HINTERNET& hConnection,
-        HINTERNET& hRemoteFile,
-        ULONGLONG& nFileLength);
-    //						����Ʈ ���� �б�
-    virtual WZResult		ReadRemoteFile(HINTERNET& hRemoteFile,
-        BYTE* byReadBuffer,
-        DWORD* dwBytesRead);
+  //						����
+  virtual WZResult CreateSession( HINTERNET& hSession );
+  //						Ŀ��Ʈ
+  virtual WZResult CreateConnection( HINTERNET& hSession, HINTERNET& hConnection );
+  //						�ٿ�ε� ���� ���� & ������ ��������
+  virtual WZResult OpenRemoteFile( HINTERNET& hConnection, HINTERNET& hRemoteFile, ULONGLONG& nFileLength );
+  //						����Ʈ ���� �б�
+  virtual WZResult ReadRemoteFile( HINTERNET& hRemoteFile, BYTE* byReadBuffer, DWORD* dwBytesRead );
 };

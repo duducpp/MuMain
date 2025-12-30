@@ -8,70 +8,72 @@
 #include "NewUI/3DRenderMng.h"
 #include "NewUI/MyInventory.h"
 
-namespace SEASON3B
+namespace SEASON3B {
+class CNewUIDuelWatchMainFrameWindow
+    : public CNewUIObj
+    , public INewUI3DRenderObj
 {
-    class CNewUIDuelWatchMainFrameWindow : public CNewUIObj, public INewUI3DRenderObj
-    {
-    public:
-        enum IMAGE_LIST
-        {
-            IMAGE_DUELWATCH_MAINFRAME_BACK1 = BITMAP_BUFFWATCH_MAINFRAME_BEGIN,
-            IMAGE_DUELWATCH_MAINFRAME_BACK2,
-            IMAGE_DUELWATCH_MAINFRAME_BACK3,
-            IMAGE_DUELWATCH_MAINFRAME_SCORE,
-            IMAGE_DUELWATCH_MAINFRAME_HP_GAUGE,
-            IMAGE_DUELWATCH_MAINFRAME_SD_GAUGE,
-            IMAGE_DUELWATCH_MAINFRAME_HP_GAUGE_FX,
-            IMAGE_DUELWATCH_MAINFRAME_SD_GAUGE_FX,
-            IMAGE_INVENTORY_EXIT_BTN = CNewUIMyInventory::IMAGE_INVENTORY_EXIT_BTN,
-        };
-    private:
-        CNewUIManager* m_pNewUIMng;
-        CNewUI3DRenderMng* m_pNewUI3DRenderMng;
+public:
+  enum IMAGE_LIST
+  {
+    IMAGE_DUELWATCH_MAINFRAME_BACK1 = BITMAP_BUFFWATCH_MAINFRAME_BEGIN,
+    IMAGE_DUELWATCH_MAINFRAME_BACK2,
+    IMAGE_DUELWATCH_MAINFRAME_BACK3,
+    IMAGE_DUELWATCH_MAINFRAME_SCORE,
+    IMAGE_DUELWATCH_MAINFRAME_HP_GAUGE,
+    IMAGE_DUELWATCH_MAINFRAME_SD_GAUGE,
+    IMAGE_DUELWATCH_MAINFRAME_HP_GAUGE_FX,
+    IMAGE_DUELWATCH_MAINFRAME_SD_GAUGE_FX,
+    IMAGE_INVENTORY_EXIT_BTN = CNewUIMyInventory::IMAGE_INVENTORY_EXIT_BTN,
+  };
 
-        CNewUIButton m_BtnExit;			// 닫기 버튼
+private:
+  CNewUIManager*     m_pNewUIMng;
+  CNewUI3DRenderMng* m_pNewUI3DRenderMng;
 
-        BOOL m_bHasHPReceived;	// HP 초기상태인가
-        float m_fPrevHPRate1;
-        float m_fPrevHPRate2;
-        float m_fPrevSDRate1;
-        float m_fPrevSDRate2;
-        float m_fLastHPRate1;
-        float m_fLastHPRate2;
-        float m_fLastSDRate1;
-        float m_fLastSDRate2;
-        float m_fReceivedHPRate1;
-        float m_fReceivedHPRate2;
-        float m_fReceivedSDRate1;
-        float m_fReceivedSDRate2;
+  CNewUIButton m_BtnExit; // 닫기 버튼
 
-    public:
-        CNewUIDuelWatchMainFrameWindow();
-        virtual ~CNewUIDuelWatchMainFrameWindow();
+  BOOL  m_bHasHPReceived; // HP 초기상태인가
+  float m_fPrevHPRate1;
+  float m_fPrevHPRate2;
+  float m_fPrevSDRate1;
+  float m_fPrevSDRate2;
+  float m_fLastHPRate1;
+  float m_fLastHPRate2;
+  float m_fLastSDRate1;
+  float m_fLastSDRate2;
+  float m_fReceivedHPRate1;
+  float m_fReceivedHPRate2;
+  float m_fReceivedSDRate1;
+  float m_fReceivedSDRate2;
 
-        bool Create(CNewUIManager* pNewUIMng, CNewUI3DRenderMng* pNewUI3DRenderMng);
-        void Release();
+public:
+  CNewUIDuelWatchMainFrameWindow();
+  virtual ~CNewUIDuelWatchMainFrameWindow();
 
-        void SetPos(int x, int y);
+  bool Create( CNewUIManager* pNewUIMng, CNewUI3DRenderMng* pNewUI3DRenderMng );
+  void Release();
 
-        bool UpdateMouseEvent();
-        bool UpdateKeyEvent();
-        bool Update();
-        bool Render();
-        void Render3D();
+  void SetPos( int x, int y );
 
-        bool IsVisible() const;
+  bool UpdateMouseEvent();
+  bool UpdateKeyEvent();
+  bool Update();
+  bool Render();
+  void Render3D();
 
-        void OpeningProcess();
-        void ClosingProcess();
+  bool IsVisible() const;
 
-        float GetLayerDepth();	//. 5.0f
+  void OpeningProcess();
+  void ClosingProcess();
 
-    private:
-        void LoadImages();
-        void UnloadImages();
+  float GetLayerDepth(); //. 5.0f
 
-        void RenderFrame();
-        bool BtnProcess();
-    };
+private:
+  void LoadImages();
+  void UnloadImages();
+
+  void RenderFrame();
+  bool BtnProcess();
+};
 }

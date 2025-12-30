@@ -7,11 +7,10 @@ CONST int MAX_KEY_GENERATER_FILTER = 10;
 class CKeyGenerater
 {
 public:
-    CKeyGenerater();
-    virtual ~CKeyGenerater();
-    DWORD		GenerateKeyValue(DWORD dwKeyValue);
-    bool		CheckKeyValue(DWORD* dwOldKeyValue, DWORD dwReceiveKeyValue);
-
+  CKeyGenerater();
+  virtual ~CKeyGenerater();
+  DWORD GenerateKeyValue( DWORD dwKeyValue );
+  bool  CheckKeyValue( DWORD* dwOldKeyValue, DWORD dwReceiveKeyValue );
 };
 
 extern CKeyGenerater g_KeyGenerater;

@@ -1,8 +1,8 @@
 /*******************************************************************************
-*	�� �� �� : ������
-*	�� �� �� : 2009.07.07
-*	��    �� : Connecter Interface
-*******************************************************************************/
+ *	�� �� �� : ������
+ *	�� �� �� : 2009.07.07
+ *	��    �� : Connecter Interface
+ *******************************************************************************/
 
 #pragma once
 
@@ -12,38 +12,31 @@
 class IConnecter
 {
 public:
-    // Constructor, Destructor
+  // Constructor, Destructor
 
-    IConnecter(DownloadServerInfo* pServerInfo,
-        DownloadFileInfo* pFileInfo)
-        : m_pServerInfo(pServerInfo),
-        m_pFileInfo(pFileInfo)
-    {};
-    ~IConnecter() {};
+  IConnecter( DownloadServerInfo* pServerInfo, DownloadFileInfo* pFileInfo )
+      : m_pServerInfo( pServerInfo )
+      , m_pFileInfo( pFileInfo ) {};
+  ~IConnecter() {};
 
-    // abstract Function
+  // abstract Function
 
-        //						����
-    virtual WZResult		CreateSession(HINTERNET& hSession) = 0;
-    //						Ŀ��Ʈ
-    virtual WZResult		CreateConnection(HINTERNET& hSession,
-        HINTERNET& hConnection) = 0;
-    //						�ٿ�ε� ���� ���� & ������ ��������
-    virtual WZResult		OpenRemoteFile(HINTERNET& hConnection,
-        HINTERNET& hRemoteFile,
-        ULONGLONG& nFileLength) = 0;
-    //						����Ʈ ���� �б�
-    virtual WZResult		ReadRemoteFile(HINTERNET& hRemoteFile,
-        BYTE* byReadBuffer,
-        DWORD* dwBytesRead) = 0;
+  //						����
+  virtual WZResult CreateSession( HINTERNET& hSession ) = 0;
+  //						Ŀ��Ʈ
+  virtual WZResult CreateConnection( HINTERNET& hSession, HINTERNET& hConnection ) = 0;
+  //						�ٿ�ε� ���� ���� & ������ ��������
+  virtual WZResult OpenRemoteFile( HINTERNET& hConnection, HINTERNET& hRemoteFile, ULONGLONG& nFileLength ) = 0;
+  //						����Ʈ ���� �б�
+  virtual WZResult ReadRemoteFile( HINTERNET& hRemoteFile, BYTE* byReadBuffer, DWORD* dwBytesRead ) = 0;
 
 protected:
-    // Member Object
+  // Member Object
 
-        //						���..
-    WZResult 				m_Result;
-    //						�ٿ�ε� ���� ���� ��ü
-    DownloadServerInfo* m_pServerInfo;
-    //						�ٿ�ε� ���� ���� ��ü
-    DownloadFileInfo* m_pFileInfo;
+  //						���..
+  WZResult m_Result;
+  //						�ٿ�ε� ���� ���� ��ü
+  DownloadServerInfo* m_pServerInfo;
+  //						�ٿ�ε� ���� ���� ��ü
+  DownloadFileInfo* m_pFileInfo;
 };

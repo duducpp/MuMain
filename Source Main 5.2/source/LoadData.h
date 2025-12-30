@@ -7,10 +7,10 @@
 class CLoadData
 {
 public:
-    CLoadData();
-    virtual ~CLoadData();
-    void AccessModel(int Type, wchar_t* Dir, wchar_t* FileName, int i = -1);
-    void OpenTexture(int Model, wchar_t* SubFolder, int Wrap = GL_REPEAT, int Type = GL_NEAREST, bool Check = true);
+  CLoadData();
+  virtual ~CLoadData();
+  void AccessModel( int Type, wchar_t* Dir, wchar_t* FileName, int i = -1 );
+  void OpenTexture( int Model, wchar_t* SubFolder, int Wrap = GL_REPEAT, int Type = GL_NEAREST, bool Check = true );
 
 public:
 };

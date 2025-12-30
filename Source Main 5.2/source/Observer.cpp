@@ -17,13 +17,9 @@
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
-CObserver::CObserver()
-{
-}
+CObserver::CObserver() {}
 
-CObserver::~CObserver()
-{
-}
+CObserver::~CObserver() {}
 
 //*****************************************************************************
 // CSubject
@@ -33,13 +29,9 @@ CObserver::~CObserver()
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
-CSubject::CSubject()
-{
-}
+CSubject::CSubject() {}
 
-CSubject::~CSubject()
-{
-}
+CSubject::~CSubject() {}
 
 //*****************************************************************************
 // 함수 이름 : Attach()
@@ -47,9 +39,9 @@ CSubject::~CSubject()
 //			   (서브젝트 자식 클래스 생성시 호출하는 것이 적당.)
 // 매개 변수 : pObserver	: 옵져버 오브젝트의 포인터.
 //*****************************************************************************
-void CSubject::Attach(CObserver* pObserver)
+void CSubject::Attach( CObserver* pObserver )
 {
-    m_ObserverList.AddTail(pObserver);
+  m_ObserverList.AddTail( pObserver );
 }
 
 //*****************************************************************************
@@ -58,11 +50,12 @@ void CSubject::Attach(CObserver* pObserver)
 //			   (서브젝트 자식 클래스 릴리즈 전에 호출하는 것이 적당.)
 // 매개 변수 : pObserver	: 옵져버 오브젝트의 포인터.
 //*****************************************************************************
-void CSubject::Detach(CObserver* pObserver)
+void CSubject::Detach( CObserver* pObserver )
 {
-    NODE* pPos = m_ObserverList.Find(pObserver);
-    if (pPos)
-        m_ObserverList.RemoveAt(pPos);
+  NODE* pPos = m_ObserverList.Find( pObserver );
+  if ( pPos ) {
+    m_ObserverList.RemoveAt( pPos );
+  }
 }
 
 //*****************************************************************************
@@ -72,11 +65,10 @@ void CSubject::Detach(CObserver* pObserver)
 //*****************************************************************************
 void CSubject::Notify()
 {
-    CObserver* pObserver;
-    NODE* pPos = m_ObserverList.GetHeadPosition();
-    while (pPos)
-    {
-        pObserver = (CObserver*)m_ObserverList.GetNext(pPos);
-        pObserver->UpdateData(this);
-    }
+  CObserver* pObserver;
+  NODE*      pPos = m_ObserverList.GetHeadPosition();
+  while ( pPos ) {
+    pObserver = (CObserver*)m_ObserverList.GetNext( pPos );
+    pObserver->UpdateData( this );
+  }
 }

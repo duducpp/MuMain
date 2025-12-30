@@ -6,43 +6,44 @@
 #include "NewUI/Base.h"
 #include "NewUI/Manager.h"
 
-namespace SEASON3B
+namespace SEASON3B {
+class CNewUIDuelWatchUserListWindow : public CNewUIObj
 {
-    class CNewUIDuelWatchUserListWindow : public CNewUIObj
-    {
-    public:
-        enum IMAGE_LIST
-        {
-            IMAGE_DUELWATCH_USERLIST_BOX = BITMAP_BUFFWATCH_USERLIST_BEGIN,
-        };
-    private:
-        CNewUIManager* m_pNewUIMng;
-        POINT						m_Pos;
+public:
+  enum IMAGE_LIST
+  {
+    IMAGE_DUELWATCH_USERLIST_BOX = BITMAP_BUFFWATCH_USERLIST_BEGIN,
+  };
 
-    public:
-        CNewUIDuelWatchUserListWindow();
-        virtual ~CNewUIDuelWatchUserListWindow();
+private:
+  CNewUIManager* m_pNewUIMng;
+  POINT          m_Pos;
 
-        bool Create(CNewUIManager* pNewUIMng, int x, int y);
-        void Release();
+public:
+  CNewUIDuelWatchUserListWindow();
+  virtual ~CNewUIDuelWatchUserListWindow();
 
-        void SetPos(int x, int y);
+  bool Create( CNewUIManager* pNewUIMng, int x, int y );
+  void Release();
 
-        bool UpdateMouseEvent();
-        bool UpdateKeyEvent();
-        bool Update();
-        bool Render();
+  void SetPos( int x, int y );
 
-        bool BtnProcess();
+  bool UpdateMouseEvent();
+  bool UpdateKeyEvent();
+  bool Update();
+  bool Render();
 
-        float GetLayerDepth();	//. 5.4f
+  bool BtnProcess();
 
-        void OpeningProcess();
-        void ClosingProcess();
-    private:
-        void LoadImages();
-        void UnloadImages();
+  float GetLayerDepth(); //. 5.4f
 
-        void RenderFrame();
-    };
+  void OpeningProcess();
+  void ClosingProcess();
+
+private:
+  void LoadImages();
+  void UnloadImages();
+
+  void RenderFrame();
+};
 }

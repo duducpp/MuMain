@@ -9,131 +9,124 @@
 
 using namespace SEASON3B;
 
-CPartyManager::CPartyManager()
-{
-}
+CPartyManager::CPartyManager() {}
 
 CPartyManager::~CPartyManager()
 {
-    Release();
+  Release();
 }
 
 bool CPartyManager::Create()
 {
-    return true;
+  return true;
 }
 
-void CPartyManager::Release()
-{
-}
+void CPartyManager::Release() {}
 
 bool CPartyManager::Update()
 {
-    return true;
+  return true;
 }
 
 bool CPartyManager::Render()
 {
-    return true;
+  return true;
 }
 
 CPartyManager* CPartyManager::GetInstance()
 {
-    static CPartyManager sPartyManager;
-    return &sPartyManager;
+  static CPartyManager sPartyManager;
+  return &sPartyManager;
 }
 
 void CPartyManager::SearchPartyMember()
 {
-    for (int i = 0; i < MAX_CHARACTERS_CLIENT; i++)
-    {
-        CHARACTER* c = &CharactersClient[i];
-        OBJECT* o = &c->Object;
-        if (o->Type == MODEL_PLAYER && o->Kind == KIND_PLAYER && o->Live && o->Visible && o->Alpha > 0.f && c->Dead == 0)
-        {
-            for (int j = 0; j < PartyNumber; ++j)
-            {
-                PARTY_t* p = &Party[j];
-
-                if (p->index != -2) continue;
-                if (p->index > -1) continue;
-
-                int length = std::max<int>(wcslen(p->Name), std::max<int>(1, wcslen(c->ID)));
-
-                if (!wcsncmp(p->Name, c->ID, length))
-                {
-                    p->index = i;
-                    break;
-                }
-            }
-        }
-    }
-
-    for (int j = 0; j < PartyNumber; ++j)
-    {
+  for ( int i = 0; i < MAX_CHARACTERS_CLIENT; i++ ) {
+    CHARACTER* c = &CharactersClient[i];
+    OBJECT*    o = &c->Object;
+    if ( o->Type == MODEL_PLAYER && o->Kind == KIND_PLAYER && o->Live && o->Visible && o->Alpha > 0.f &&
+         c->Dead == 0 ) {
+      for ( int j = 0; j < PartyNumber; ++j ) {
         PARTY_t* p = &Party[j];
 
-        if (p->index >= 0) continue;
-
-        int length = std::max<int>(wcslen(p->Name), std::max<int>(1, wcslen(Hero->ID)));
-
-        if (!wcsncmp(p->Name, Hero->ID, length))
-        {
-            p->index = -3;
+        if ( p->index != -2 ) {
+          continue;
         }
-        else
-        {
-            p->index = -1;
+        if ( p->index > -1 ) {
+          continue;
         }
+
+        int length = std::max<int>( wcslen( p->Name ), std::max<int>( 1, wcslen( c->ID ) ) );
+
+        if ( !wcsncmp( p->Name, c->ID, length ) ) {
+          p->index = i;
+          break;
+        }
+      }
     }
+  }
+
+  for ( int j = 0; j < PartyNumber; ++j ) {
+    PARTY_t* p = &Party[j];
+
+    if ( p->index >= 0 ) {
+      continue;
+    }
+
+    int length = std::max<int>( wcslen( p->Name ), std::max<int>( 1, wcslen( Hero->ID ) ) );
+
+    if ( !wcsncmp( p->Name, Hero->ID, length ) ) {
+      p->index = -3;
+    } else {
+      p->index = -1;
+    }
+  }
 }
 
 bool CPartyManager::IsPartyActive()
 {
-    int iMemberCount = 0;
+  int iMemberCount = 0;
 
-    for (int i = 0; i < ((sizeof(Party) / sizeof(Party[0])) - 1); i++)
-    {
-        PARTY_t* pMember = &Party[i];
-        if (pMember->Name[0] == L'\0')
-        {
-            continue;
-        }
-
-        CHARACTER* pChar = FindCharacterByID(pMember->Name);
-        if (pChar != NULL)
-        {
-            iMemberCount++;
-        }
+  for ( int i = 0; i < ( ( sizeof( Party ) / sizeof( Party[0] ) ) - 1 ); i++ ) {
+    PARTY_t* pMember = &Party[i];
+    if ( pMember->Name[0] == L'\0' ) {
+      continue;
     }
 
-    return iMemberCount > 1;
-}
-
-bool CPartyManager::IsPartyMember(int index)
-{
-    CHARACTER* c = &CharactersClient[index];
-    return IsPartyMemberChar(c);
-}
-
-bool CPartyManager::IsPartyMemberChar(CHARACTER* c)
-{
-    for (int i = 0; i < PartyNumber; ++i)
-    {
-        PARTY_t* p = &Party[i];
-
-        int length = std::max<int>(1, wcslen(c->ID));
-        if (!wcsncmp(p->Name, c->ID, length)) return true;
+    CHARACTER* pChar = FindCharacterByID( pMember->Name );
+    if ( pChar != NULL ) {
+      iMemberCount++;
     }
+  }
 
-    return false;
+  return iMemberCount > 1;
 }
 
-CHARACTER* CPartyManager::GetPartyMemberChar(PARTY_t* pMember)
+bool CPartyManager::IsPartyMember( int index )
 {
-    if (pMember == nullptr || pMember->Name[0] == L'\0') {
-        return NULL;
-    }
+  CHARACTER* c = &CharactersClient[index];
+  return IsPartyMemberChar( c );
+}
 
-    return FindCharacterByID(pMember->Name);
+bool CPartyManager::IsPartyMemberChar( CHARACTER* c )
+{
+  for ( int i = 0; i < PartyNumber; ++i ) {
+    PARTY_t* p = &Party[i];
+
+    int length = std::max<int>( 1, wcslen( c->ID ) );
+    if ( !wcsncmp( p->Name, c->ID, length ) ) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+CHARACTER* CPartyManager::GetPartyMemberChar( PARTY_t* pMember )
+{
+  if ( pMember == nullptr || pMember->Name[0] == L'\0' ) {
+    return NULL;
+  }
+
+  return FindCharacterByID( pMember->Name );
 }

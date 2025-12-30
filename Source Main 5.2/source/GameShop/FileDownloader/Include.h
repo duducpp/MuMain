@@ -1,12 +1,12 @@
 /*******************************************************************************
-*	�� �� �� : ������
-*	�� �� �� : 2009.06.10
-*	��    �� : Include Header
-*******************************************************************************/
+ *	�� �� �� : ������
+ *	�� �� �� : 2009.06.10
+ *	��    �� : Include Header
+ *******************************************************************************/
 
 #pragma once
 
-#pragma warning(disable : 4995)
+#pragma warning( disable : 4'995 )
 
 #include <iostream>
 #include <wininet.h>
@@ -19,4 +19,4 @@
 #include "GameShop/ShopListManager/interface/DownloadInfo.h"
 #include "GameShop/ShopListManager/interface/IDownloaderStateEvent.h"
 
-#pragma comment(lib, "Wininet.lib")
+#pragma comment( lib, "Wininet.lib" )

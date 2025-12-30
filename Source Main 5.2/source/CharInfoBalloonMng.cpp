@@ -13,15 +13,16 @@
 
 CCharInfoBalloonMng::~CCharInfoBalloonMng()
 {
-    Release();
+  Release();
 }
 
 void CCharInfoBalloonMng::Release()
 {
-    if (!m_isInitialized)
-        return;
+  if ( !m_isInitialized ) {
+    return;
+  }
 
-    m_isInitialized = false;
+  m_isInitialized = false;
 }
 
 //*****************************************************************************
@@ -31,10 +32,11 @@ void CCharInfoBalloonMng::Release()
 //*****************************************************************************
 void CCharInfoBalloonMng::Create()
 {
-    for (std::size_t i = 0; i < kBalloonCount; ++i)
-        m_charInfoBalloons[i].Create(&CharactersClient[i]);
+  for ( std::size_t i = 0; i < kBalloonCount; ++i ) {
+    m_charInfoBalloons[i].Create( &CharactersClient[i] );
+  }
 
-    m_isInitialized = true;
+  m_isInitialized = true;
 }
 
 //*****************************************************************************
@@ -43,11 +45,13 @@ void CCharInfoBalloonMng::Create()
 //*****************************************************************************
 void CCharInfoBalloonMng::Render()
 {
-    if (!m_isInitialized)
-        return;
+  if ( !m_isInitialized ) {
+    return;
+  }
 
-    for (auto& balloon : m_charInfoBalloons)
-        balloon.Render();
+  for ( auto& balloon : m_charInfoBalloons ) {
+    balloon.Render();
+  }
 }
 
 //*****************************************************************************
@@ -56,9 +60,11 @@ void CCharInfoBalloonMng::Render()
 //*****************************************************************************
 void CCharInfoBalloonMng::UpdateDisplay()
 {
-    if (!m_isInitialized)
-        return;
+  if ( !m_isInitialized ) {
+    return;
+  }
 
-    for (auto& balloon : m_charInfoBalloons)
-        balloon.SetInfo();
+  for ( auto& balloon : m_charInfoBalloons ) {
+    balloon.SetInfo();
+  }
 }

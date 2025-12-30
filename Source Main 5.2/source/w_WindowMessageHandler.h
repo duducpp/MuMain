@@ -1,10 +1,9 @@
 #pragma once
 
-namespace util
+namespace util {
+struct WindowMessageHandler
 {
-    struct WindowMessageHandler
-    {
-        virtual ~WindowMessageHandler(void) {}
-        virtual bool HandleWindowMessage(UINT message, WPARAM wParam, LPARAM lParam, LRESULT& result) = 0;
-    };
+  virtual ~WindowMessageHandler( void ) {}
+  virtual bool HandleWindowMessage( UINT message, WPARAM wParam, LPARAM lParam, LRESULT& result ) = 0;
+};
 };

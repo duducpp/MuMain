@@ -8,35 +8,40 @@
 class CTimer
 {
 public:
-    CTimer();
-    ~CTimer() = default;
+  CTimer();
+  ~CTimer() = default;
 
-    double GetTimeElapsed(); // Time elapsed since the last reset
-    double GetAbsTime();     // Absolute time since timer creation
-    void ResetTimer();       // Resets the start time to now
+  double GetTimeElapsed(); // Time elapsed since the last reset
+  double GetAbsTime();     // Absolute time since timer creation
+  void   ResetTimer();     // Resets the start time to now
 
 private:
-    using Clock = std::chrono::high_resolution_clock;
-    using TimePoint = std::chrono::time_point<Clock>;
+  using Clock     = std::chrono::high_resolution_clock;
+  using TimePoint = std::chrono::time_point<Clock>;
 
-    TimePoint m_startTime;    // Start time for relative measurements
-    TimePoint m_absStartTime; // Absolute start time of the timer
+  TimePoint m_startTime;    // Start time for relative measurements
+  TimePoint m_absStartTime; // Absolute start time of the timer
 };
 
 class CTimer2
 {
 public:
-    CTimer2() : m_startTickCount(0), m_delay(0), m_timeReached(false) {}
-    ~CTimer2() = default;
+  CTimer2()
+      : m_startTickCount( 0 )
+      , m_delay( 0 )
+      , m_timeReached( false )
+  {
+  }
+  ~CTimer2() = default;
 
-    void SetTimer(unsigned int delay);
-    unsigned int GetDelay() const;
-    void ResetTimer();
-    void UpdateTime();
-    bool IsTime() const;
+  void         SetTimer( unsigned int delay );
+  unsigned int GetDelay() const;
+  void         ResetTimer();
+  void         UpdateTime();
+  bool         IsTime() const;
 
 private:
-    unsigned int m_startTickCount;
-    unsigned int m_delay;
-    bool m_timeReached;
+  unsigned int m_startTickCount;
+  unsigned int m_delay;
+  bool         m_timeReached;
 };

@@ -18,26 +18,26 @@
 class CShopList
 {
 public:
-    CShopList();
-    virtual ~CShopList();
+  CShopList();
+  virtual ~CShopList();
 
-    WZResult LoadCategroy(const wchar_t* szFilePath);
-    WZResult LoadPackage(const wchar_t* szFilePath);
-    WZResult LoadProduct(const wchar_t* szFilePath);
+  WZResult LoadCategroy( const wchar_t* szFilePath );
+  WZResult LoadPackage( const wchar_t* szFilePath );
+  WZResult LoadProduct( const wchar_t* szFilePath );
 
-    CShopCategoryList* GetCategoryListPtr() { return m_CategoryListPtr; };	// 카테고리 목록 가져온다.
-    CShopPackageList* GetPackageListPtr() { return m_PackageListPtr; };		// 패키지 목록 가져온다.
-    CShopProductList* GetProductListPtr() { return m_ProductListPtr; };		// 상품(속성) 목록 가져온다.
+  CShopCategoryList* GetCategoryListPtr() { return m_CategoryListPtr; }; // 카테고리 목록 가져온다.
+  CShopPackageList*  GetPackageListPtr() { return m_PackageListPtr; };   // 패키지 목록 가져온다.
+  CShopProductList*  GetProductListPtr() { return m_ProductListPtr; };   // 상품(속성) 목록 가져온다.
 
-    void SetCategoryListPtr(CShopCategoryList* CategoryListPtr);
-    void SetPackageListPtr(CShopPackageList* PackagePtr);
-    void SetProductListPtr(CShopProductList* ProductListPtr);
+  void SetCategoryListPtr( CShopCategoryList* CategoryListPtr );
+  void SetPackageListPtr( CShopPackageList* PackagePtr );
+  void SetProductListPtr( CShopProductList* ProductListPtr );
 
 private:
-    CShopCategoryList* m_CategoryListPtr;
-    CShopPackageList* m_PackageListPtr;
-    CShopProductList* m_ProductListPtr;
+  CShopCategoryList* m_CategoryListPtr;
+  CShopPackageList*  m_PackageListPtr;
+  CShopProductList*  m_ProductListPtr;
 
-    FILE_ENCODE IsFileEncodingUtf8(const wchar_t* szFilePath);
-    std::wstring GetDecodedString(const char* buffer, FILE_ENCODE encode);
+  FILE_ENCODE  IsFileEncodingUtf8( const wchar_t* szFilePath );
+  std::wstring GetDecodedString( const char* buffer, FILE_ENCODE encode );
 };

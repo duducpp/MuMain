@@ -20,33 +20,33 @@ using CGM_PK_FieldPtr = std::shared_ptr<CGM_PK_Field>;
 class CGM_PK_Field final : public BaseMap
 {
 public:
-    static CGM_PK_FieldPtr Make();
-    ~CGM_PK_Field() override;
+  static CGM_PK_FieldPtr Make();
+  ~CGM_PK_Field() override;
 
-    bool CreateObject(OBJECT* object) override;
-    bool MoveObject(OBJECT* object) override;
-    bool RenderObjectVisual(OBJECT* object, BMD* bmd) override;
-    bool RenderObjectMesh(OBJECT* object, BMD* bmd, bool extraMon = false) override;
-    void RenderAfterObjectMesh(OBJECT* object, BMD* bmd, bool extraMon = false) override;
+  bool CreateObject( OBJECT* object ) override;
+  bool MoveObject( OBJECT* object ) override;
+  bool RenderObjectVisual( OBJECT* object, BMD* bmd ) override;
+  bool RenderObjectMesh( OBJECT* object, BMD* bmd, bool extraMon = false ) override;
+  void RenderAfterObjectMesh( OBJECT* object, BMD* bmd, bool extraMon = false ) override;
 
-    CHARACTER* CreateMonster(int type, int positionX, int positionY, int key) override;
-    bool MoveMonsterVisual(OBJECT* object, BMD* bmd) override;
-    void MoveBlurEffect(CHARACTER* character, OBJECT* object, BMD* bmd) override;
-    bool RenderMonsterVisual(CHARACTER* character, OBJECT* object, BMD* bmd) override;
+  CHARACTER* CreateMonster( int type, int positionX, int positionY, int key ) override;
+  bool       MoveMonsterVisual( OBJECT* object, BMD* bmd ) override;
+  void       MoveBlurEffect( CHARACTER* character, OBJECT* object, BMD* bmd ) override;
+  bool       RenderMonsterVisual( CHARACTER* character, OBJECT* object, BMD* bmd ) override;
 
-    bool PlayMonsterSound(OBJECT* object) override;
-    void PlayObjectSound(OBJECT* object) override;
+  bool PlayMonsterSound( OBJECT* object ) override;
+  void PlayObjectSound( OBJECT* object ) override;
 
-    void PlayBGM();
-    bool CreateFireSpark(PARTICLE* particle);
+  void PlayBGM();
+  bool CreateFireSpark( PARTICLE* particle );
 
-    void Init();
-    void Destroy();
+  void Init();
+  void Destroy();
 
 private:
-    CGM_PK_Field();
+  CGM_PK_Field();
 
-    bool RenderMonster(OBJECT* object, BMD* bmd, bool extraMon);
+  bool RenderMonster( OBJECT* object, BMD* bmd, bool extraMon );
 };
 
 bool IsPKField();

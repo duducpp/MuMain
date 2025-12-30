@@ -5,41 +5,40 @@
 
 #include "NewUI/Base.h"
 
-namespace SEASON3B
+namespace SEASON3B {
+class CNewUIManager;
+
+class CNewUIHotKey : public CNewUIObj
 {
-    class CNewUIManager;
+  CNewUIManager* m_pNewUIMng;
+  bool           m_bStateGameOver;
 
-    class CNewUIHotKey : public CNewUIObj
-    {
-        CNewUIManager* m_pNewUIMng;
-        bool			m_bStateGameOver;
+public:
+  CNewUIHotKey();
+  virtual ~CNewUIHotKey();
 
-    public:
-        CNewUIHotKey();
-        virtual ~CNewUIHotKey();
+  bool Create( CNewUIManager* pNewUIMng );
+  void Release();
 
-        bool Create(CNewUIManager* pNewUIMng);
-        void Release();
+  bool UpdateMouseEvent();
+  bool UpdateKeyEvent();
+  bool Update();
+  bool Render();
 
-        bool UpdateMouseEvent();
-        bool UpdateKeyEvent();
-        bool Update();
-        bool Render();
+  float GetLayerDepth();    //. 1.0f
+  float GetKeyEventOrder(); //. 1.0f
 
-        float GetLayerDepth();	//. 1.0f
-        float GetKeyEventOrder();	//. 1.0f
+  bool CanUpdateKeyEvent();
+  bool CanUpdateKeyEventRelatedMyInventory();
 
-        bool CanUpdateKeyEvent();
-        bool CanUpdateKeyEventRelatedMyInventory();
+  void SetStateGameOver( bool bGameOver ); // 게임오버중인 상태
+  bool IsStateGameOver();
 
-        void SetStateGameOver(bool bGameOver);	// 게임오버중인 상태
-        bool IsStateGameOver();
+  bool AutoGetItem();
 
-        bool AutoGetItem();
-
-    private:
-        void ResetMouseRButton();
-    };
+private:
+  void ResetMouseRButton();
+};
 }
 
-#endif	// _NEWUIHOTKEY_H_
+#endif // _NEWUIHOTKEY_H_

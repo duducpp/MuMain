@@ -3,9 +3,8 @@
 
 #pragma once
 
-namespace M40GMArea
-{
-    bool IsGmArea();
+namespace M40GMArea {
+bool IsGmArea();
 }
 
 #endif /* _GMGMAREA_H_ */

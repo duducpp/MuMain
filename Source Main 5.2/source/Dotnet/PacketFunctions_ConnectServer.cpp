@@ -15,48 +15,47 @@
 #include "PacketFunctions_ConnectServer.h"
 #include "PacketBindings_ConnectServer.h"
 
-
-void PacketFunctions_ConnectServer::SendConnectionInfoRequest075(BYTE serverId)
+void PacketFunctions_ConnectServer::SendConnectionInfoRequest075( BYTE serverId )
 {
-    dotnet_SendConnectionInfoRequest075(this->GetHandle(), serverId);
+  dotnet_SendConnectionInfoRequest075( this->GetHandle(), serverId );
 }
 
-void PacketFunctions_ConnectServer::SendConnectionInfoRequest(uint16_t serverId)
+void PacketFunctions_ConnectServer::SendConnectionInfoRequest( uint16_t serverId )
 {
-    dotnet_SendConnectionInfoRequest(this->GetHandle(), serverId);
+  dotnet_SendConnectionInfoRequest( this->GetHandle(), serverId );
 }
 
-void PacketFunctions_ConnectServer::SendConnectionInfo(const wchar_t* ipAddress, uint16_t port)
+void PacketFunctions_ConnectServer::SendConnectionInfo( const wchar_t* ipAddress, uint16_t port )
 {
-    dotnet_SendConnectionInfo(this->GetHandle(), ipAddress, port);
+  dotnet_SendConnectionInfo( this->GetHandle(), ipAddress, port );
 }
 
 void PacketFunctions_ConnectServer::SendServerListRequest()
 {
-    dotnet_SendServerListRequest(this->GetHandle());
+  dotnet_SendServerListRequest( this->GetHandle() );
 }
 
 void PacketFunctions_ConnectServer::SendServerListRequestOld()
 {
-    dotnet_SendServerListRequestOld(this->GetHandle());
+  dotnet_SendServerListRequestOld( this->GetHandle() );
 }
 
 void PacketFunctions_ConnectServer::SendHello()
 {
-    dotnet_SendHello(this->GetHandle());
+  dotnet_SendHello( this->GetHandle() );
 }
 
-void PacketFunctions_ConnectServer::SendPatchCheckRequest(BYTE majorVersion, BYTE minorVersion, BYTE patchVersion)
+void PacketFunctions_ConnectServer::SendPatchCheckRequest( BYTE majorVersion, BYTE minorVersion, BYTE patchVersion )
 {
-    dotnet_SendPatchCheckRequest(this->GetHandle(), majorVersion, minorVersion, patchVersion);
+  dotnet_SendPatchCheckRequest( this->GetHandle(), majorVersion, minorVersion, patchVersion );
 }
 
 void PacketFunctions_ConnectServer::SendPatchVersionOkay()
 {
-    dotnet_SendPatchVersionOkay(this->GetHandle());
+  dotnet_SendPatchVersionOkay( this->GetHandle() );
 }
 
-void PacketFunctions_ConnectServer::SendClientNeedsPatch(BYTE patchVersion, const wchar_t* patchAddress)
+void PacketFunctions_ConnectServer::SendClientNeedsPatch( BYTE patchVersion, const wchar_t* patchAddress )
 {
-    dotnet_SendClientNeedsPatch(this->GetHandle(), patchVersion, patchAddress);
+  dotnet_SendClientNeedsPatch( this->GetHandle(), patchVersion, patchAddress );
 }

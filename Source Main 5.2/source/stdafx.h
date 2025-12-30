@@ -1,30 +1,30 @@
 // stdafx.h : include file for standard system include files,
 #pragma once
 
-//warining
-#pragma warning( disable : 4067 )
-#pragma warning( disable : 4786 )
-#pragma warning( disable : 4800 )
-#pragma warning( disable : 4996 )
-#pragma warning( disable : 4244 )
-#pragma warning( disable : 4237 )
-#pragma warning( disable : 4305 )
-#pragma warning( disable : 4503 )
-#pragma warning( disable : 4267 )
-#pragma warning( disable : 4091 )
-#pragma warning( disable : 4819 )
-#pragma warning( disable : 4505 )
-#pragma warning( disable : 4100 )
-#pragma warning( disable : 4127 )
-#pragma warning( disable : 4702 )
-#pragma warning( disable : 4838 )
-#pragma warning( disable : 5208 )
-//#pragma warning( disable : 4482 )
-//#pragma warning( disable : 4700 )
-//#pragma warning( disable : 4748 )
-//#pragma warning( disable : 4786 )
-#pragma warning( disable : 28159 )
-#pragma warning( disable : 26812 )
+// warining
+#pragma warning( disable : 4'067 )
+#pragma warning( disable : 4'786 )
+#pragma warning( disable : 4'800 )
+#pragma warning( disable : 4'996 )
+#pragma warning( disable : 4'244 )
+#pragma warning( disable : 4'237 )
+#pragma warning( disable : 4'305 )
+#pragma warning( disable : 4'503 )
+#pragma warning( disable : 4'267 )
+#pragma warning( disable : 4'091 )
+#pragma warning( disable : 4'819 )
+#pragma warning( disable : 4'505 )
+#pragma warning( disable : 4'100 )
+#pragma warning( disable : 4'127 )
+#pragma warning( disable : 4'702 )
+#pragma warning( disable : 4'838 )
+#pragma warning( disable : 5'208 )
+// #pragma warning( disable : 4482 )
+// #pragma warning( disable : 4700 )
+// #pragma warning( disable : 4748 )
+// #pragma warning( disable : 4786 )
+#pragma warning( disable : 28'159 )
+#pragma warning( disable : 26'812 )
 
 #define NOMINMAX
 
@@ -34,7 +34,7 @@
 // Use 32-bit time_t only for 32-bit MSVC builds. This avoids conflicts
 // with 64-bit toolchains such as x86_64-w64-mingw32, which require
 // 64-bit time_t.
-#if defined(_MSC_VER) && !defined(_WIN64)
+#if defined( _MSC_VER ) && !defined( _WIN64 )
 #ifndef _USE_32BIT_TIME_T
 #define _USE_32BIT_TIME_T
 #endif //_USE_32BIT_TIME_T
@@ -47,12 +47,12 @@
 
 #include <windows.h>
 
-//windows
+// windows
 #include <winsock2.h>
 #include <mmsystem.h>
 #include <shellapi.h>
 
-//c runtime
+// c runtime
 #include <stdio.h>
 #include <stdlib.h>
 #include <malloc.h>
@@ -75,16 +75,16 @@
 
 #pragma warning( pop )
 
-//opengl
+// opengl
 #include <gl/glew.h>
 #include <gl/GL.h>
 
-//patch
-//winmain
+// patch
+// winmain
 #include "Winmain.h"
 #include "Defined_Global.h"
 
-//client
+// client
 #include "_define.h"
 #include "_enum.h"
 #include "_types.h"
@@ -99,7 +99,6 @@
 
 #include "MultiLanguage.h"
 
-
 #include "./Utilities/Log/muConsoleDebug.h"
 #include "./Utilities/Log/ErrorReport.h"
 #include "./Utilities/Log/WindowsConsole.h"
@@ -109,5 +108,5 @@
 #include "_crypt.h"
 
 inline std::wstring g_strSelectedML = L"";
-inline float g_fScreenRate_x = 0;
-inline float g_fScreenRate_y = 0;
+inline float        g_fScreenRate_x = 0;
+inline float        g_fScreenRate_y = 0;
