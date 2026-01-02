@@ -4,9 +4,9 @@
 #include "stdafx.h"
 #include "NewUI/SiegeWarCommander.h"
 #include "UIControls.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzTexture.h"
 
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzCharacter.h"
 
 using namespace SEASON3B;
 

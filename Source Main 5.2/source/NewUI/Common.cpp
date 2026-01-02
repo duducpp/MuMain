@@ -8,8 +8,8 @@
 #include "NewUI/RenderNumber.h"
 #include "NewUI/System.h"
 #include "NewUI/CommonMessageBox.h"
-#include "ZzzTexture.h"
-#include "ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
 
 extern int MouseX, MouseY;
 #ifdef ASG_FIX_ACTIVATE_APP_INPUT

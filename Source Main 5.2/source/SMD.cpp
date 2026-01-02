@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include <ctype.h>
-#include "ZzzBMD.h"
+#include "Game/Engine/ZzzBMD.h"
 #include "SMD.h"
 #include "ReadScript.h"
 

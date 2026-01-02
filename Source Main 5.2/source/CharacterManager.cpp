@@ -6,7 +6,7 @@
 #include "CSItemOption.h"
 #include "GlobalText.h"
 #include "SkillManager.h"
-#include "ZzzInfomation.h"
+#include "Game/Engine/ZzzInfomation.h"
 
 #include <algorithm>
 #include <array>

@@ -6,8 +6,8 @@
 #include "NewUI/KanturuEvent.h"
 #include "NewUI/CommonMessageBox.h"
 #include "NewUI/System.h"
-#include "ZzzAI.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzEffect.h"
 
 #include "ChangeRingManager.h"
 #include "CDirection.h"

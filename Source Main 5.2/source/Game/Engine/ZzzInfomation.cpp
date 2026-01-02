@@ -2,20 +2,20 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "ZzzInfomation.h"
+#include "Game/Engine/ZzzInfomation.h"
 
 #include <codecvt>
 
-#include "ZzzBMD.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
-#include "ZzzScene.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzScene.h"
+#include "Game/Engine/ZzzInterface.h"
 #include "ReadScript.h"
-#include "ZzzInventory.h"
-#include "ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzInventory.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
 
-#include "ZzzLodTerrain.h"
+#include "Game/Engine/ZzzLodTerrain.h"
 #include "CSItemOption.h"
 #include "GIPetManager.h"
 #include "CComGem.h"

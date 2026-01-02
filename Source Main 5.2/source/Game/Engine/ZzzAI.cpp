@@ -6,12 +6,12 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "ZzzBMD.h"
-#include "ZzzInfomation.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
-#include "ZzzLodTerrain.h"
-#include "ZzzAI.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzLodTerrain.h"
+#include "Game/Engine/ZzzAI.h"
 
 #include <algorithm>
 #include <cmath>
@@ -19,13 +19,13 @@
 #include <mutex>
 
 #include "Random.h"
-#include "ZzzTexture.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzInterface.h"
-#include "ZzzEffect.h"
-#include "ZzzScene.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzInterface.h"
+#include "Game/Engine/ZzzEffect.h"
+#include "Game/Engine/ZzzScene.h"
 #include "DSPlaySound.h"
-#include "ZzzPath.h"
+#include "Game/Engine/ZzzPath.h"
 #include "CharacterManager.h"
 #include "SkillManager.h"
 

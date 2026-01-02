@@ -5,9 +5,9 @@
 #include <chrono>
 #include <cmath>
 
-#include "ZzzAI.h"
-#include "ZzzCharacter.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzInterface.h"
 #include "NewUI/System.h"
 #include "Utilities/Log/muConsoleDebug.h"
 #include "SkillManager.h"

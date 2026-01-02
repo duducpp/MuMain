@@ -5,7 +5,7 @@
 
 #include "NewUI/EnterDevilSquare.h"
 #include "NewUI/System.h"
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzCharacter.h"
 #include "CharacterManager.h"
 #include "DSPlaySound.h"
 

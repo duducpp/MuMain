@@ -4,7 +4,7 @@
 #ifndef __GMBATTLECASTLE_H__
 #define __GMBATTLECASTLE_H__
 
-#include "ZzzBMD.h"
+#include "Game/Engine/ZzzBMD.h"
 
 namespace battleCastle {
 inline bool InBattleCastle2( vec3_t Position )

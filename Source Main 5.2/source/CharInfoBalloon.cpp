@@ -4,8 +4,8 @@
 
 #include "stdafx.h"
 #include "CharInfoBalloon.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzInterface.h"
 #include "UIControls.h"
 #include "CharacterManager.h"
 

@@ -1,8 +1,8 @@
 // UIRefinery.cpp: implementation of the UIRefinery class.
 //////////////////////////////////////////////////////////////////////
 #include "stdafx.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzTexture.h"
 #include "UIManager.h"
 #include "UIJewelHarmony.h"
 

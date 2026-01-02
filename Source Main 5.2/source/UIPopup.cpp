@@ -2,9 +2,9 @@
 //////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzTexture.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzInterface.h"
 #include "UIManager.h"
 #include "UIPopup.h"
 #include "NewUI/System.h"

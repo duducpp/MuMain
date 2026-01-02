@@ -5,9 +5,9 @@
 #include "NewUI/ChatLogWindow.h"
 #include "UIControls.h"
 #include "NewUI/System.h"
-#include "ZzzOpenData.h"
+#include "Game/Engine/ZzzOpenData.h"
 #include "MapManager.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzInterface.h"
 
 using namespace SEASON3B;
 

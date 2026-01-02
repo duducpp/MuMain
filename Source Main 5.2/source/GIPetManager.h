@@ -4,10 +4,10 @@
 #define __CIPET_MANAGER_H__
 
 #include <cstdint>
-#include "ZzzBMD.h"
-#include "ZzzInfomation.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
 #include "CSPetSystem.h"
 
 namespace giPetManager {

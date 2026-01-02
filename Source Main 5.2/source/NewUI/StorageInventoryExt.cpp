@@ -8,7 +8,7 @@
 #include "DSPlaySound.h"
 #include "NewUI/System.h"
 #include "NewUI/CustomMessageBox.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 
 using namespace SEASON3B;
 

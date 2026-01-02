@@ -3,15 +3,15 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzBMD.h"
-#include "ZzzInfomation.h"
-#include "ZzzObject.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzObject.h"
 #include "ShadowVolume.h"
-#include "ZzzLodTerrain.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzLodTerrain.h"
+#include "Game/Engine/ZzzTexture.h"
 #include "SideHair.h"
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzCharacter.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction

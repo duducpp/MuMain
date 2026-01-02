@@ -12,8 +12,8 @@
 #include <cwctype>
 #include <string>
 
-#include "ZzzCharacter.h"
-#include "ZzzInfomation.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzInfomation.h"
 #include "CharacterManager.h"
 #include "CSPetSystem.h"
 #include "DSPlaySound.h"
@@ -22,12 +22,12 @@
 #include "NewUI/System.h"
 #include "PersonalShopTitleImp.h"
 #include "UIManager.h"
-#include "ZzzBMD.h"
-#include "ZzzEffect.h"
-#include "ZzzInterface.h"
-#include "ZzzInventory.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzEffect.h"
+#include "Game/Engine/ZzzInterface.h"
+#include "Game/Engine/ZzzInventory.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzTexture.h"
 
 extern bool    SkillEnable;
 extern wchar_t TextList[50][100];

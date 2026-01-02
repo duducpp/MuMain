@@ -3,10 +3,10 @@
 
 #include "stdafx.h"
 #include "w_BasePet.h"
-#include "ZzzLodTerrain.h"
-#include "ZzzObject.h"
-#include "ZzzAI.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzLodTerrain.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzEffect.h"
 
 extern float EarthQuake;
 

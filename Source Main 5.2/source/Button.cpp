@@ -9,12 +9,12 @@
 
 #include "Button.h"
 #include "Input.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzBMD.h"
-#include "ZzzInfomation.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzInterface.h"
 #include "DSPlaySound.h"
 #include "UIControls.h"
 

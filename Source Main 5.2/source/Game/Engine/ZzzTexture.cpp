@@ -8,7 +8,7 @@
 #include <memory>
 #include <string>
 #include <vector>
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzTexture.h"
 
 #include "WSclient.h"
 #include "turbojpeg.h"

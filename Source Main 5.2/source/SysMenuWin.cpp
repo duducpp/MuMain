@@ -7,8 +7,8 @@
 
 #include "Input.h"
 #include "UIMng.h"
-#include "ZzzInfomation.h"
-#include "ZzzScene.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzScene.h"
 
 #include "DSPlaySound.h"
 

@@ -6,10 +6,10 @@
 #include "NewUI/PartyListWindow.h"
 #include "NewUI/System.h"
 
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 #include "CharacterManager.h"
 #include "SkillManager.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzInterface.h"
 
 using namespace SEASON3B;
 

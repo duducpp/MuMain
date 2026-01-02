@@ -1,6 +1,6 @@
 #pragma once
 
-#include "ZzzInfomation.h"
+#include "Game/Engine/ZzzInfomation.h"
 #include "SpinLock.h"
 
 extern EGameScene SceneFlag;

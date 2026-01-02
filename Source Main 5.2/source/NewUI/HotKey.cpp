@@ -7,10 +7,10 @@
 #include "DSPlaySound.h"
 #include "CSChaosCastle.h"
 #include "w_CursedTemple.h"
-#include "ZzzInterface.h"
-#include "ZzzLodTerrain.h"
+#include "Game/Engine/ZzzInterface.h"
+#include "Game/Engine/ZzzLodTerrain.h"
 
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzEffect.h"
 #include "UIMng.h"
 #include "MapManager.h"
 #include "CharacterManager.h"

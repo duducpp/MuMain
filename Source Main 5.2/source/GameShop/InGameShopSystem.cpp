@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #ifdef KJH_ADD_INGAMESHOP_UI_SYSTEM
 #include "InGameShopSystem.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 #include "MsgBoxIGSCommon.h"
 
 #ifdef CONSOLE_DEBUG

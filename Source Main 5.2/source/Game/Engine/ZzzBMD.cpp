@@ -2,16 +2,16 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzInfomation.h"
-#include "ZzzBMD.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
-#include "ZzzLodTerrain.h"
-#include "ZzzTexture.h"
-#include "ZzzAI.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzLodTerrain.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzAI.h"
 #include "SMD.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzEffect.h"
 
 #include "UIMng.h"
 #include "CameraMove.h"
@@ -2581,7 +2581,7 @@ bool BMD::Open2( wchar_t* DirName, wchar_t* ModelFileName, bool bReAlloc )
     m.NoneBlendMesh = false;
 
     //// wprintf(L"[Open2] Mesh[%d] V:%d N:%d T:%d Tri:%d Tex:%d\n", i, m.NumVertices, m.NumNormals, m.NumTexCoords,
-    ///m.NumTriangles, m.Texture);
+    /// m.NumTriangles, m.Texture);
 
     m.Vertices  = new Vertex_t[m.NumVertices];
     m.Normals   = new Normal_t[m.NumNormals];

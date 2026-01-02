@@ -1,15 +1,15 @@
 ﻿// GMEmpireGuardian1.cpp: implementation of the GMEmpireGuardian1 class.
 //////////////////////////////////////////////////////////////////////
 #include "stdafx.h"
-#include "ZzzBMD.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
-#include "ZzzAI.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzEffect.h"
 #include "w_MapHeaders.h"
 #include "DSPlaySound.h"
-#include "ZzzOpenData.h"
-#include "ZzzLodTerrain.h"
+#include "Game/Engine/ZzzOpenData.h"
+#include "Game/Engine/ZzzLodTerrain.h"
 #include "BoneManager.h"
 #include "PhysicsManager.h"
 #include "MapManager.h"
@@ -2227,9 +2227,10 @@ bool GMEmpireGuardian1::PlayMonsterSound( OBJECT* o )
           // 					PlayBuffer(SOUND_SKILL_BLOWOFDESTRUCTION);
         } break;
         case MONSTER01_ATTACK3: {
-          PlayBuffer( SOUND_EMPIREGUARDIAN_RAYMOND_MONSTER_ATTACK02 ); // Raymond_attack2.wav
-                                                                       // 					PlayBuffer(SOUND_METEORITE01);
-                                                                       // 					PlayBuffer(SOUND_EXPLOTION01);
+          PlayBuffer(
+              SOUND_EMPIREGUARDIAN_RAYMOND_MONSTER_ATTACK02 ); // Raymond_attack2.wav
+                                                               // 					PlayBuffer(SOUND_METEORITE01);
+                                                               // 					PlayBuffer(SOUND_EXPLOTION01);
         } break;
         case MONSTER01_APEAR: {
           PlayBuffer( SOUND_EMPIREGUARDIAN_RAYMOND_MONSTER_RAGE ); // Raymond_rage.wav

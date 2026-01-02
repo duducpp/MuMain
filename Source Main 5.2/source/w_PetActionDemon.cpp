@@ -3,8 +3,8 @@
 
 #include "stdafx.h"
 #include "w_PetActionDemon.h"
-#include "ZzzAI.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzEffect.h"
 
 PetActionDemonPtr PetActionDemon::Make()
 {

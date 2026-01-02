@@ -4,9 +4,9 @@
 
 #include "stdafx.h"
 #include "UIGuildInfo.h"
-#include "ZzzInventory.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzInventory.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzTexture.h"
 #include "UIManager.h"
 #include "UIGuildMaster.h"
 #include "DSPlaySound.h"
@@ -14,7 +14,7 @@
 #include "NewUI/CommonMessageBox.h"
 #include "Local.h"
 #include "NewUI/System.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzInterface.h"
 
 extern CUITextInputBox* g_pSingleTextInputBox;
 extern int              g_iChatInputType;

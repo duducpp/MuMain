@@ -5,10 +5,10 @@
 //////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzTexture.h"
-#include "ZzzInterface.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzInterface.h"
+#include "Game/Engine/ZzzInventory.h"
 #include "GIPetManager.h"
 #include "PersonalShopTitleImp.h"
 #include "CComGem.h"

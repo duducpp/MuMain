@@ -10,8 +10,8 @@
 
 #include "GlobalBitmap.h"
 
-#include "ZzzBMD.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzTexture.h"
 
 CLoadData gLoadData;
 

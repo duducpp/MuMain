@@ -7,8 +7,8 @@
 #include "NewUI/GuildInfoWindow.h"
 #include "NewUI/MyInventory.h"
 #include "UIControls.h"
-#include "ZzzBMD.h"
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzCharacter.h"
 #include "UIGuildInfo.h"
 #include "UIManager.h"
 #include "PersonalShopTitleImp.h"
@@ -22,7 +22,7 @@
 #include "NewUI/LuckyItemWnd.h"
 #include "NewUI/System.h"
 #include "SkillManager.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzInterface.h"
 
 using namespace SEASON3B;
 

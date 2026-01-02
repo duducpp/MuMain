@@ -8,7 +8,7 @@
 #include "NewUI/MessageBox.h"
 #include "NewUI/MyInventory.h"
 #include "NewUI/CommonMessageBox.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 
 namespace SEASON3B {
 class CNewUIRegistrationLuckyCoin : public CNewUIObj

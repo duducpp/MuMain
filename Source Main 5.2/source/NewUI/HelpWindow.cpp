@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include "NewUI/HelpWindow.h"
 #include "NewUI/System.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 #include "DSPlaySound.h"
 
 using namespace SEASON3B;

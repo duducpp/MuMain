@@ -6,7 +6,7 @@
 
 #include "DSPlaySound.h"
 #include "NewUI/System.h"
-#include "ZzzInfomation.h"
+#include "Game/Engine/ZzzInfomation.h"
 #include "npcGateSwitch.h"
 
 using namespace SEASON3B;

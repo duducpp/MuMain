@@ -5,7 +5,7 @@
 
 #include "NewUI/Base.h"
 #include "ExternalObject/Leaf/xstreambuf.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzTexture.h"
 #include "UIBaseDef.h"
 
 #pragma warning( disable : 4'786 )

@@ -5,9 +5,9 @@
 #include "stdafx.h"
 #include "NewUI/CatapultWindow.h"
 #include "NewUI/System.h"
-#include "ZzzCharacter.h"
-#include "ZzzAI.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzEffect.h"
 #include "DSPlaySound.h"
 
 using namespace SEASON3B;

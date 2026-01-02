@@ -4,9 +4,9 @@
 #include "stdafx.h"
 
 #include "MonkSystem.h"
-#include "ZzzEffect.h"
-#include "ZzzAI.h"
-#include "ZzzLodTerrain.h"
+#include "Game/Engine/ZzzEffect.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzLodTerrain.h"
 
 #include "LoadData.h"
 #include "CharacterManager.h"
@@ -14,7 +14,7 @@
 #include "SkillManager.h"
 #include "MapManager.h"
 #include "WSclient.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzInterface.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction

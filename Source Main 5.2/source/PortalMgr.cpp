@@ -3,8 +3,8 @@
 //////////////////////////////////////////////////////////////////////
 #include "stdafx.h"
 #include "PortalMgr.h"
-#include "ZzzBMD.h"
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzCharacter.h"
 #include "MapManager.h"
 
 CPortalMgr g_PortalMgr;

@@ -11,9 +11,9 @@
 #include "UIGuildInfo.h"
 #include "UIControls.h"
 #include "UIPopup.h"
-#include "ZzzInterface.h"
-#include "ZzzInventory.h"
-#include "ZzzInfomation.h"
+#include "Game/Engine/ZzzInterface.h"
+#include "Game/Engine/ZzzInventory.h"
+#include "Game/Engine/ZzzInfomation.h"
 
 #include "CharacterManager.h"
 

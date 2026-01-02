@@ -5,12 +5,12 @@
 #include "stdafx.h"
 #include "UIMapName.h"
 #include "MapManager.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzTexture.h"
 
 #include "UIWindows.h"
 #ifdef ASG_ADD_GENS_SYSTEM
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 #endif // ASG_ADD_GENS_SYSTEM
 
 #define UIMN_SHOW_TIME 5'000

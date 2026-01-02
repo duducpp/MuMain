@@ -8,10 +8,10 @@
 
 #include "DSPlaySound.h"
 #include "NewUI/System.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzInterface.h"
 #include "PersonalShopTitleImp.h"
 #include "UIGuildInfo.h"
-#include "ZzzAI.h"
+#include "Game/Engine/ZzzAI.h"
 #include "w_CursedTemple.h"
 #include "DuelMgr.h"
 #include "MapManager.h"

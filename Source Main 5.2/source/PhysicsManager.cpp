@@ -3,10 +3,10 @@
 
 #include "stdafx.h"
 #include "PhysicsManager.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzTexture.h"
-#include "ZzzCharacter.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzEffect.h"
 #include "MapManager.h"
 
 #define RENDER_CLOTH
@@ -564,8 +564,8 @@ void CPhysicsCloth::GetPosition( int index, vec3_t* pPos )
 }
 
 #ifdef _DEBUG
-#include "ZzzCharacter.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzEffect.h"
 #endif
 
 void CPhysicsCloth::InitForces( void )

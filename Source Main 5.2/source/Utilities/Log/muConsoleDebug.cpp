@@ -8,15 +8,15 @@
 #include <io.h>
 #include <fcntl.h>
 #include <iostream>
-#include "ZzzInterface.h"
-#include "ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzInterface.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
 #include "WindowsConsole.h"
 
 #include "GlobalBitmap.h"
-#include "ZzzTexture.h"
-#include "ZzzScene.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzScene.h"
 #ifdef CSK_DEBUG_MAP_PATHFINDING
-#include "ZzzPath.h"
+#include "Game/Engine/ZzzPath.h"
 #endif // CSK_DEBUG_MAP_PATHFINDING
 
 CmuConsoleDebug::CmuConsoleDebug()

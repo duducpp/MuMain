@@ -12,8 +12,8 @@
 
 #include "MultiLanguage.h"
 #include "WSclient.h"
-#include "ZzzCharacter.h"
-#include "ZzzOpenData.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzOpenData.h"
 
 extern int     LogIn;
 extern wchar_t LogInID[MAX_ID_SIZE + 1];

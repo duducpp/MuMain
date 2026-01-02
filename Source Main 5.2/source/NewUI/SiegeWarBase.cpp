@@ -6,8 +6,8 @@
 using namespace SEASON3B;
 
 #include "NewUI/SiegeWarBase.h"
-#include "ZzzInterface.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInterface.h"
+#include "Game/Engine/ZzzInventory.h"
 #include "UIGuildInfo.h"
 #include "CharacterManager.h"
 #include "SkillManager.h"

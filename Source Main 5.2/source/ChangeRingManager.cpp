@@ -3,10 +3,10 @@
 
 // common
 #include "stdafx.h"
-#include "ZzzTexture.h"
-#include "ZzzOpenData.h"
-#include "ZzzBMD.h"
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzOpenData.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzCharacter.h"
 #include "ChangeRingManager.h"
 #include "LoadData.h"
 #include "CharacterManager.h"

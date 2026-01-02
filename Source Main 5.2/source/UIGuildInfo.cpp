@@ -3,16 +3,16 @@
 //////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzInterface.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzInterface.h"
+#include "Game/Engine/ZzzTexture.h"
 #include "UIManager.h"
 #include "UIGuildInfo.h"
 #include "CSParts.h"
 #include "NewUI/CommonMessageBox.h"
 #include "CharacterManager.h"
 #include "DSPlaySound.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 
 extern int   DeleteGuildIndex;
 extern DWORD g_dwActiveUIID;

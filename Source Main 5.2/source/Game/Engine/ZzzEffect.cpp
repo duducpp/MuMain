@@ -2,15 +2,15 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzBMD.h"
-#include "ZzzInfomation.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
-#include "ZzzLodTerrain.h"
-#include "ZzzTexture.h"
-#include "ZzzAI.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzLodTerrain.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzEffect.h"
 #include "DSPlaySound.h"
 #include "UIManager.h"
 #include "CDirection.h"
@@ -19,7 +19,7 @@
 #include "CharacterManager.h"
 #include "SkillManager.h"
 #include "NewUI/System.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzInterface.h"
 
 PARTICLE Particles[MAX_PARTICLES];
 #ifdef DEVIAS_XMAS_EVENT
@@ -472,10 +472,10 @@ void CreateEffect( int Type, vec3_t Position, vec3_t Angle, vec3_t Light, int Su
                               CreateJoint ( BITMAP_FLARE+1, o->Position, o->Position, o->Angle, 17, o, 15.f, 40 );
                               */
           //					CreateJoint ( BITMAP_JOINT_FORCE, o->Position, o->Position, o->Angle, 7,
-          //o, 150.f, 40 ); 					CreateJoint ( BITMAP_FLARE+1, o->Position, o->Position, o->Angle, 14, o, 50.f, 40 );
-          //					CreateJoint(BITMAP_JOINT_ENERGY,o->Position,o->Position,o->Angle,5,o,100.f);
+          // o, 150.f, 40 ); 					CreateJoint ( BITMAP_FLARE+1, o->Position, o->Position,
+          // o->Angle, 14, o, 50.f, 40 ); 					CreateJoint(BITMAP_JOINT_ENERGY,o->Position,o->Position,o->Angle,5,o,100.f);
           //					CreateJoint(BITMAP_JOINT_HEALING, o->Position, o->Position, o->Angle,
-          //14, o, 30.f);
+          // 14, o, 30.f);
         } break;
         case MODEL_WARP3:
         case MODEL_WARP6:
@@ -1568,7 +1568,7 @@ void CreateEffect( int Type, vec3_t Position, vec3_t Angle, vec3_t Light, int Su
           if ( Type == MODEL_ARROW_NATURE && o->SubType == 1 ) { //. 녹색 띠 생성
             CreateJoint( BITMAP_FLARE + 1, o->Position, o->Position, o->Angle, 13, o, 20.f, 40 );
             //					CreateJoint ( BITMAP_FLARE+1, o->Position, o->Position, o->Angle, 6,
-            //o, 20.f, 40 ); 					CheckTargetRange(o);
+            // o, 20.f, 40 ); 					CheckTargetRange(o);
           }
 
           if ( Type == MODEL_ARROW && ( o->SubType == 3 || o->SubType == 4 ) ) {
@@ -16396,8 +16396,8 @@ void RenderEffects( bool bRenderBlendMesh )
               // 			else // 2-3-1. Effect를 통한 렌더의 경우.
               // 			{
               // 				pBMDSwordModel->TransformByObjectBone(vPos_SwordEffectRed01, o,
-              // iBoneIdx_SwordEffectMain01, vRelative); 				pBMDSwordModel->TransformByObjectBone(vPos_SwordEffectRed02, o,
-              // iBoneIdx_SwordEffectMain02, vRelative);
+              // iBoneIdx_SwordEffectMain01, vRelative);
+              // pBMDSwordModel->TransformByObjectBone(vPos_SwordEffectRed02, o, iBoneIdx_SwordEffectMain02, vRelative);
               // 			}
 
               CreateSprite( BITMAP_LIGHT_RED, vPos_SwordEffectRed01, 1.3f, vLight, o );

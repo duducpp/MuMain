@@ -10,19 +10,19 @@
 #include <eh.h>
 #include "UIManager.h"
 #include "GuildCache.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzBMD.h"
-#include "ZzzInfomation.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
-#include "ZzzLodTerrain.h"
-#include "ZzzTexture.h"
-#include "ZzzAI.h"
-#include "ZzzInterface.h"
-#include "ZzzInventory.h"
-#include "ZzzEffect.h"
-#include "ZzzOpenData.h"
-#include "ZzzScene.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzLodTerrain.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzInterface.h"
+#include "Game/Engine/ZzzInventory.h"
+#include "Game/Engine/ZzzEffect.h"
+#include "Game/Engine/ZzzOpenData.h"
+#include "Game/Engine/ZzzScene.h"
 #include "DSPlaySound.h"
 
 #include "PhysicsManager.h"
@@ -8714,7 +8714,7 @@ void RenderCharacter( CHARACTER* c, OBJECT* o, int Select )
         Vector( 1.f, 0.6f, 0.3f, Light );
         if ( c->Weapon[0].Type != -1 &&
              c->Weapon[0].Type != MODEL_ARROWS ) //&& ( c->Weapon[0].Type<MODEL_SHIELD ||
-                                                 //c->Weapon[0].Type>=MODEL_SHIELD+MAX_ITEM_INDEX ) )
+                                                 // c->Weapon[0].Type>=MODEL_SHIELD+MAX_ITEM_INDEX ) )
         {
           b->TransformPosition( o->BoneTransform[c->Weapon[0].LinkBone], p, Position, true );
           if ( c->Weapon[0].Type >= MODEL_BOW && c->Weapon[0].Type < MODEL_BOW + MAX_ITEM_INDEX ) {

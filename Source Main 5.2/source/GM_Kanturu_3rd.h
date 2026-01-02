@@ -3,7 +3,7 @@
 
 #pragma once
 
-#include "ZzzBMD.h"
+#include "Game/Engine/ZzzBMD.h"
 
 namespace M39Kanturu3rd {
 bool IsInKanturu3rd();

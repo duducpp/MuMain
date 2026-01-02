@@ -6,9 +6,9 @@
 
 #pragma once
 
-#include "ZzzBMD.h"
-#include "ZzzInfomation.h"
-#include "ZzzObject.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzObject.h"
 #include "BaseCls.h"
 
 #define PVS_NORMAL ( 0x00 )

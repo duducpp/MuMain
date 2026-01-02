@@ -7,7 +7,7 @@
 #include "DSPlaySound.h"
 #include "NewUI/System.h"
 #include "NewUI/CommonMessageBox.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 
 #include "GambleSystem.h"
 

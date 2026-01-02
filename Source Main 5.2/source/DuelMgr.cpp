@@ -4,8 +4,8 @@
 
 #include "stdafx.h"
 #include "DuelMgr.h"
-#include "ZzzInfomation.h"
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzCharacter.h"
 
 #include "CharacterManager.h"
 #include "WSclient.h"

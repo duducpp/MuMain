@@ -8,8 +8,8 @@
 
 #include "NewUI/Manager.h"
 #include "NewUI/WindowMenu.h"
-#include "ZzzBMD.h"
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzCharacter.h"
 
 namespace SEASON3B {
 class CNewUIQuickCommandWindow : public CNewUIObj

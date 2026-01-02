@@ -3,9 +3,9 @@
 
 #include "stdafx.h"
 #include "PartyManager.h"
-#include "ZzzBMD.h"
-#include "ZzzCharacter.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzInventory.h"
 
 using namespace SEASON3B;
 

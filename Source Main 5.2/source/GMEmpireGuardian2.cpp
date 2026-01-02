@@ -1,15 +1,15 @@
 ﻿// GMEmpireGuardian2.cpp: implementation of the GMEmpireGuardian2 class.
 //////////////////////////////////////////////////////////////////////
 #include "stdafx.h"
-#include "ZzzBMD.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
-#include "ZzzAI.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzEffect.h"
 #include "w_MapHeaders.h"
 #include "DSPlaySound.h"
-#include "ZzzOpenData.h"
-#include "ZzzLodTerrain.h"
+#include "Game/Engine/ZzzOpenData.h"
+#include "Game/Engine/ZzzLodTerrain.h"
 #include "GOBoid.h"
 
 GMEmpireGuardian2Ptr GMEmpireGuardian2::Make()
@@ -378,8 +378,10 @@ bool GMEmpireGuardian2::MoveMonsterVisual( CHARACTER* c, OBJECT* o, BMD* b )
           // 						if( o->AnimationFrame >= 6.6f && o->AnimationFrame <= 7.4f )
           // 						{
           // 							CreateEffect ( MODEL_WAVES, o->Position, o->Angle,
-          // o->Light, 1 ); 							CreateEffect ( MODEL_WAVES, o->Position, o->Angle, o->Light, 1 ); 							CreateEffect (
-          // MODEL_PIERCING2, o->Position, o->Angle, o->Light ); 							PlayBuffer ( SOUND_ATTACK_SPEAR );
+          // o->Light, 1 ); 							CreateEffect ( MODEL_WAVES, o->Position,
+          // o->Angle, o->Light, 1 ); 							CreateEffect ( MODEL_PIERCING2,
+          // o->Position, o->Angle, o->Light ); 							PlayBuffer (
+          // SOUND_ATTACK_SPEAR );
           // 						}
         } break;
         case MONSTER01_ATTACK2: {

@@ -12,8 +12,8 @@
 #include <memory>
 
 #include "CameraMove.h"
-#include "ZzzLodTerrain.h"
-#include "ZzzAI.h"
+#include "Game/Engine/ZzzLodTerrain.h"
+#include "Game/Engine/ZzzAI.h"
 
 CCameraMove::CCameraMove()
 {

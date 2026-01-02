@@ -1,12 +1,12 @@
 ﻿#include "stdafx.h"
 #include "CComGem.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzTexture.h"
 
 #include <algorithm>
 #include <cstdint>
 
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 #include "NewUI/InventoryCtrl.h"
 #include "NewUI/System.h"
 

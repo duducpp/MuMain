@@ -7,17 +7,17 @@
 #include "Input.h"
 #include "UIMng.h"
 #include <crtdbg.h>
-#include "ZzzBMD.h"
-#include "ZzzInfomation.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzInterface.h"
 #include "GOBoid.h"
-#include "ZzzScene.h"
+#include "Game/Engine/ZzzScene.h"
 #include "DSPlaySound.h"
 
 #include "UIControls.h"
-#include "ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
 #include "Utilities/Log/ErrorReport.h"
 
 #define MW_OK 0

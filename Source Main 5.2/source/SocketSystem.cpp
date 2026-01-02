@@ -1,9 +1,9 @@
 ﻿#include "stdafx.h"
 #include "SocketSystem.h"
 
-#include "ZzzInventory.h"
-#include "ZzzBMD.h"
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzInventory.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzCharacter.h"
 #include "WSclient.h"
 #include "UIControls.h"
 #include "CharacterManager.h"

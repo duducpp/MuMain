@@ -3,15 +3,15 @@
 
 #include "stdafx.h"
 #include "BoneManager.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzInfomation.h"
-#include "ZzzBMD.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
-#include "ZzzLodTerrain.h"
-#include "ZzzTexture.h"
-#include "ZzzAI.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzLodTerrain.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzEffect.h"
 #include "DSPlaySound.h"
 #include "WSclient.h"
 #include "MapManager.h"
@@ -3618,7 +3618,7 @@ void MoveParticles()
                 CreateParticle( BITMAP_EXPLOTION, Position, o->Angle, Light, 1 );
                 //							Vector(0.3f,0.3f,0.3f,Light);
                 //							CreateParticle ( BITMAP_SMOKE+1, Position,
-                //o->Angle, Light );
+                // o->Angle, Light );
               }
             } else if ( (int)o->LifeTime == 10 ) {
               o->LifeTime = 9.9f;
@@ -3633,7 +3633,7 @@ void MoveParticles()
                 CreateParticle( BITMAP_EXPLOTION, Position, o->Angle, Light, 1 );
                 //							Vector(0.3f,0.3f,0.3f,Light);
                 //							CreateParticle ( BITMAP_SMOKE+1, Position,
-                //o->Angle, Light );
+                // o->Angle, Light );
               }
             } else if ( (int)o->LifeTime == 1 ) {
               o->LifeTime = 0.99f;

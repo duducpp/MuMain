@@ -6,7 +6,7 @@
 #include "NewUI/ItemExplanationWindow.h"
 #include "NewUI/System.h"
 #include "DSPlaySound.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 #include "CSItemOption.h"
 
 using namespace SEASON3B;

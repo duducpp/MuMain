@@ -6,13 +6,13 @@
 #include "NewUI/System.h"
 #include "NewUI/CustomMessageBox.h"
 #include "GOBoid.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzEffect.h"
 #include "GIPetManager.h"
 #include "CSParts.h"
 #include "UIJewelHarmony.h"
 #include "CDirection.h"
-#include "ZzzInventory.h"
-#include "ZzzLodTerrain.h"
+#include "Game/Engine/ZzzInventory.h"
+#include "Game/Engine/ZzzLodTerrain.h"
 #include "CSQuest.h"
 #include "UIGuildInfo.h"
 #include "UIManager.h"
@@ -28,7 +28,7 @@
 #include "MonkSystem.h"
 #include "CharacterManager.h"
 #include "DSPlaySound.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzInterface.h"
 
 using namespace SEASON3B;
 

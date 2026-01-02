@@ -3,10 +3,10 @@
 
 #include "stdafx.h"
 #include "NewUI/DuelWindow.h"
-#include "ZzzTexture.h"
-#include "ZzzInventory.h"
-#include "ZzzBMD.h"
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzInventory.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzCharacter.h"
 #include "UIControls.h"
 #include "DuelMgr.h"
 

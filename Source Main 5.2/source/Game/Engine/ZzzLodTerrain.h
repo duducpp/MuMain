@@ -129,8 +129,8 @@ void                                       ResetAllFrustrum();
 void                                       DeleteAllFrustrum();
 CFrustrum*                                 FindFrustrum( unsigned int iID );
 typedef std::map<unsigned int, CFrustrum*> FrustrumMap_t;
-extern FrustrumMap_t g_FrustrumMap; // 전체 프러스텀과 별개로 아이디로 지정할 수 있는 프러스텀
-#endif                              // DYNAMIC_FRUSTRUM
+extern FrustrumMap_t                       g_FrustrumMap; // 전체 프러스텀과 별개로 아이디로 지정할 수 있는 프러스텀
+#endif                                                    // DYNAMIC_FRUSTRUM
 
 inline int MapFileEncrypt( BYTE* pbyDst, BYTE* pbySrc, int iSize )
 {

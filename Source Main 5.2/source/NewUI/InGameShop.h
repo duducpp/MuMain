@@ -13,7 +13,7 @@
 #include "MessageBox.h"
 #include "MyInventory.h"
 #include "CommonMessageBox.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 #include "Sprite.h"
 #include "GameShop/InGameShopSystem.h"
 

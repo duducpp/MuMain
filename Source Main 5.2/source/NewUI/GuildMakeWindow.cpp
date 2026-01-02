@@ -7,8 +7,8 @@
 #include "NewUI/CommonMessageBox.h"
 #include "DSPlaySound.h"
 
-#include "ZzzInterface.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInterface.h"
+#include "Game/Engine/ZzzInventory.h"
 #include "Local.h"
 #include "NewUI/System.h"
 

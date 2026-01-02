@@ -6,14 +6,14 @@
 #include "UIWindows.h"
 #include "UIManager.h"
 #include "DSPlaySound.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzTexture.h"
-#include "ZzzBMD.h"
-#include "ZzzLodTerrain.h"
-#include "ZzzScene.h"
-#include "ZzzEffect.h"
-#include "ZzzAI.h"
-#include "ZzzOpenData.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzLodTerrain.h"
+#include "Game/Engine/ZzzScene.h"
+#include "Game/Engine/ZzzEffect.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzOpenData.h"
 #include "PhysicsManager.h"
 #include "CSParts.h"
 
@@ -22,7 +22,7 @@
 #include "BoneManager.h"
 
 #include "GuildCache.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzInterface.h"
 
 extern int   WaterTextureNumber;
 extern char* NUM_MUSIC;

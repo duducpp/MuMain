@@ -7,10 +7,10 @@
 #include <memory>
 #include <string>
 
-#include "ZzzInfomation.h"
-#include "ZzzBMD.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
 
 namespace BoneManager {
 void RegisterBone( CHARACTER* pCharacter, const std::wstring& name, int nBone );

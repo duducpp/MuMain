@@ -5,7 +5,7 @@
 #include "NewUI/System.h"
 #include "DSPlaySound.h"
 #include "UIControls.h"
-#include "ZzzInterface.h"
+#include "Game/Engine/ZzzInterface.h"
 
 using namespace SEASON3B;
 

@@ -11,7 +11,7 @@
 
 #include "NewUI/3DRenderMng.h"
 #include "span.hpp"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzTexture.h"
 
 namespace SEASON3B {
 class CNewUIItemMng;

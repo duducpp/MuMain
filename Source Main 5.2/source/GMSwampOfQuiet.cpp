@@ -2,16 +2,16 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzTexture.h"
-#include "ZzzBMD.h"
-#include "ZzzLodTerrain.h"
-#include "ZzzScene.h"
-#include "ZzzEffect.h"
-#include "ZzzAI.h"
-#include "ZzzOpenData.h"
-#include "ZzzCharacter.h"
-#include "ZzzObject.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzLodTerrain.h"
+#include "Game/Engine/ZzzScene.h"
+#include "Game/Engine/ZzzEffect.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzOpenData.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzObject.h"
 #include "DSPlaySound.h"
 #include "BoneManager.h"
 #include "GOBoid.h"
@@ -690,7 +690,7 @@ void GMSwampOfQuiet::MoveBlurEffect( CHARACTER* pCharacter, OBJECT* pObject, BMD
 
           pModel->TransformByBoneMatrix( EndPos, BoneTransform[34] );
           //					pModel->TransformPosition(BoneTransform[34], EndRelative, EndPos,
-          //false);
+          // false);
           CreateBlur( pCharacter, StartPos, EndPos, vLight, 0, false, 0 );
           pModel->TransformPosition( BoneTransform[35], EndRelative, EndPos, false );
           CreateBlur( pCharacter, StartPos, EndPos, vLight, 0, false, 1 );

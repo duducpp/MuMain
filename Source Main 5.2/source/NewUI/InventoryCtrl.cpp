@@ -6,7 +6,7 @@
 #include "NewUI/InventoryCtrl.h"
 #include "NewUI/ItemMng.h"
 #include "NewUI/System.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 #include "CComGem.h"
 #include "GIPetManager.h"
 #include "CSItemOption.h"

@@ -3,11 +3,11 @@
 //////////////////////////////////////////////////////////////////////////
 #include "stdafx.h"
 #include "UIWindows.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzBMD.h"
-#include "ZzzLodTerrain.h"
-#include "ZzzScene.h"
-#include "ZzzAI.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzLodTerrain.h"
+#include "Game/Engine/ZzzScene.h"
+#include "Game/Engine/ZzzAI.h"
 #include "CSEventMatch.h"
 
 #include "NewUI/CustomMessageBox.h"

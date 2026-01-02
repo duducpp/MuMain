@@ -3,10 +3,10 @@
 
 #include "stdafx.h"
 #include "w_PetActionCollecter.h"
-#include "ZzzAI.h"
-#include "ZzzEffect.h"
-#include "ZzzCharacter.h"
-#include "ZzzObject.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzEffect.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzObject.h"
 
 #include "DSPlaySound.h"
 #include "WSclient.h"

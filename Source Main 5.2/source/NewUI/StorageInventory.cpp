@@ -8,7 +8,7 @@
 #include "DSPlaySound.h"
 #include "NewUI/System.h"
 #include "NewUI/CustomMessageBox.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 
 #ifdef KJH_PBG_ADD_INGAMESHOP_SYSTEM
 #include "GameShop/MsgBoxIGSCommon.h"

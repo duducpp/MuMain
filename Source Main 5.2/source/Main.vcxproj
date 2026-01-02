@@ -473,49 +473,49 @@ for /R "$(ProjectDir)" %%f in (*.c *.h *.cpp *.hpp *.cxx *.hxx *.ixx) do (
     <ClCompile Include="w_PetActionStand.cpp" />
     <ClCompile Include="w_PetActionUnicorn.cpp" />
     <ClCompile Include="w_PetProcess.cpp" />
-    <ClCompile Include="ZzzAI.cpp" />
-    <ClCompile Include="ZzzBMD.cpp" />
-    <ClCompile Include="ZzzCharacter.cpp" />
-    <ClCompile Include="ZzzEffect.cpp">
+    <ClCompile Include="Game\Engine\ZzzAI.cpp" />
+    <ClCompile Include="Game\Engine\ZzzBMD.cpp" />
+    <ClCompile Include="Game\Engine\ZzzCharacter.cpp" />
+    <ClCompile Include="Game\Engine\ZzzEffect.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IntrinsicFunctions>
       <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Speed</FavorSizeOrSpeed>
     </ClCompile>
-    <ClCompile Include="ZzzEffectBlurSpark.cpp" />
-    <ClCompile Include="ZzzEffectFireLeave.cpp" />
-    <ClCompile Include="ZzzEffectJoint.cpp" />
-    <ClCompile Include="ZzzEffectMagicSkill.cpp" />
-    <ClCompile Include="ZzzEffectParticle.cpp" />
-    <ClCompile Include="ZzzEffectPoint.cpp" />
-    <ClCompile Include="ZzzEffectPointer.cpp" />
-    <ClCompile Include="zzzeffectsprite.cpp" />
-    <ClCompile Include="ZzzInfomation.cpp" />
-    <ClCompile Include="ZzzInterface.cpp">
+    <ClCompile Include="Game\Engine\ZzzEffectBlurSpark.cpp" />
+    <ClCompile Include="Game\Engine\ZzzEffectFireLeave.cpp" />
+    <ClCompile Include="Game\Engine\ZzzEffectJoint.cpp" />
+    <ClCompile Include="Game\Engine\ZzzEffectMagicSkill.cpp" />
+    <ClCompile Include="Game\Engine\ZzzEffectParticle.cpp" />
+    <ClCompile Include="Game\Engine\ZzzEffectPoint.cpp" />
+    <ClCompile Include="Game\Engine\ZzzEffectPointer.cpp" />
+    <ClCompile Include="Game\Engine\zzzeffectsprite.cpp" />
+    <ClCompile Include="Game\Engine\ZzzInfomation.cpp" />
+    <ClCompile Include="Game\Engine\ZzzInterface.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IntrinsicFunctions>
       <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Speed</FavorSizeOrSpeed>
     </ClCompile>
-    <ClCompile Include="ZzzInventory.cpp">
+    <ClCompile Include="Game\Engine\ZzzInventory.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IntrinsicFunctions>
       <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Speed</FavorSizeOrSpeed>
     </ClCompile>
-    <ClCompile Include="ZzzLodTerrain.cpp" />
-    <ClCompile Include="ZzzObject.cpp" />
-    <ClCompile Include="ZzzOpenData.cpp" />
+    <ClCompile Include="Game\Engine\ZzzLodTerrain.cpp" />
+    <ClCompile Include="Game\Engine\ZzzObject.cpp" />
+    <ClCompile Include="Game\Engine\ZzzOpenData.cpp" />
     <ClCompile Include="Random.cpp" />
-    <ClCompile Include="ZzzOpenglUtil.cpp" />
-    <ClCompile Include="zzzpath.cpp" />
-    <ClCompile Include="ZzzScene.cpp">
+    <ClCompile Include="Game\Engine\ZzzOpenglUtil.cpp" />
+    <ClCompile Include="Game\Engine\zzzpath.cpp" />
+    <ClCompile Include="Game\Engine\ZzzScene.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IntrinsicFunctions>
       <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Speed</FavorSizeOrSpeed>
     </ClCompile>
-    <ClCompile Include="ZzzTexture.cpp" />
+    <ClCompile Include="Game\Engine\ZzzTexture.cpp" />
     <ClCompile Include="_GlobalFunctions.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -829,20 +829,20 @@ for /R "$(ProjectDir)" %%f in (*.c *.h *.cpp *.hpp *.cxx *.hxx *.ixx) do (
     <ClInclude Include="w_PetActionUnicorn.h" />
     <ClInclude Include="w_PetProcess.h" />
     <ClInclude Include="w_WindowMessageHandler.h" />
-    <ClInclude Include="ZzzAI.h" />
-    <ClInclude Include="ZzzBMD.h" />
-    <ClInclude Include="ZzzCharacter.h" />
-    <ClInclude Include="ZzzEffect.h" />
-    <ClInclude Include="ZzzInfomation.h" />
-    <ClInclude Include="ZzzInterface.h" />
-    <ClInclude Include="ZzzInventory.h" />
-    <ClInclude Include="ZzzLodTerrain.h" />
-    <ClInclude Include="ZzzObject.h" />
-    <ClInclude Include="ZzzOpenData.h" />
-    <ClInclude Include="ZzzOpenglUtil.h" />
-    <ClInclude Include="ZzzPath.h" />
-    <ClInclude Include="ZzzScene.h" />
-    <ClInclude Include="ZzzTexture.h" />
+    <ClInclude Include="Game\Engine\ZzzAI.h" />
+    <ClInclude Include="Game\Engine\ZzzBMD.h" />
+    <ClInclude Include="Game\Engine\ZzzCharacter.h" />
+    <ClInclude Include="Game\Engine\ZzzEffect.h" />
+    <ClInclude Include="Game\Engine\ZzzInfomation.h" />
+    <ClInclude Include="Game\Engine\ZzzInterface.h" />
+    <ClInclude Include="Game\Engine\ZzzInventory.h" />
+    <ClInclude Include="Game\Engine\ZzzLodTerrain.h" />
+    <ClInclude Include="Game\Engine\ZzzObject.h" />
+    <ClInclude Include="Game\Engine\ZzzOpenData.h" />
+    <ClInclude Include="Game\Engine\ZzzOpenglUtil.h" />
+    <ClInclude Include="Game\Engine\ZzzPath.h" />
+    <ClInclude Include="Game\Engine\ZzzScene.h" />
+    <ClInclude Include="Game\Engine\ZzzTexture.h" />
     <ClInclude Include="_define.h" />
     <ClInclude Include="_enum.h" />
     <ClInclude Include="_GlobalFunctions.h" />

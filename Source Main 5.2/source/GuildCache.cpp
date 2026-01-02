@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "UIManager.h"
-#include "ZzzOpenglUtil.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzOpenglUtil.h"
+#include "Game/Engine/ZzzTexture.h"
 #include "GuildCache.h"
 
 CGuildCache g_GuildCache;

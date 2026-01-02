@@ -4,10 +4,10 @@
 #include "stdafx.h"
 
 #include "NewUI/BuffWindow.h"
-#include "ZzzBMD.h"
-#include "ZzzCharacter.h"
-#include "ZzzTexture.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzTexture.h"
+#include "Game/Engine/ZzzInventory.h"
 #include "UIControls.h"
 #include "NewUI/CommonMessageBox.h"
 

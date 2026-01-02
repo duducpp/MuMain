@@ -1,15 +1,15 @@
 ﻿// GMDoppelGanger4.cpp: implementation of the CGMDoppelGanger4 class.
 //////////////////////////////////////////////////////////////////////
 #include "stdafx.h"
-#include "ZzzBMD.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
-#include "ZzzAI.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzEffect.h"
 #include "w_MapHeaders.h"
 #include "DSPlaySound.h"
-#include "ZzzOpenData.h"
-#include "ZzzLodTerrain.h"
+#include "Game/Engine/ZzzOpenData.h"
+#include "Game/Engine/ZzzLodTerrain.h"
 #include "MapManager.h"
 
 CGMDoppelGanger4Ptr CGMDoppelGanger4::Make()

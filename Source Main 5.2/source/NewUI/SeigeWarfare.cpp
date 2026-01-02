@@ -7,7 +7,7 @@
 #include "NewUI/SiegeWarCommander.h"
 #include "NewUI/SiegeWarSoldier.h"
 #include "NewUI/SiegeWarObserver.h"
-#include "ZzzInventory.h"
+#include "Game/Engine/ZzzInventory.h"
 #include "UIGuildInfo.h"
 #include "MapManager.h"
 

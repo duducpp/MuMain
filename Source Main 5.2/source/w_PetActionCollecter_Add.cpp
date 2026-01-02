@@ -7,10 +7,10 @@
 #ifdef PJH_ADD_PANDA_PET
 
 #include "w_PetActionCollecter_Add.h"
-#include "ZzzAI.h"
-#include "ZzzEffect.h"
-#include "ZzzCharacter.h"
-#include "ZzzObject.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzEffect.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzObject.h"
 #include "WSclient.h"
 #include "DSPlaySound.h"
 

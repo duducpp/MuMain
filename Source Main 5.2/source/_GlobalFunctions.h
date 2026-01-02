@@ -1,7 +1,7 @@
 #ifndef _GLOBAL_FUNCTIONS_H
 #define _GLOBAL_FUNCTIONS_H
 
-#include "ZzzScene.h"
+#include "Game/Engine/ZzzScene.h"
 #include "w_BuffStateSystem.h"
 
 class BuffStateSystem;

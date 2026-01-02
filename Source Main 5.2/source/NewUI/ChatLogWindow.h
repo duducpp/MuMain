@@ -4,7 +4,7 @@
 #pragma once
 
 #include "NewUI/Base.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzTexture.h"
 #include "NewUI/ChatInputBox.h"
 
 #pragma warning( disable : 4'786 )

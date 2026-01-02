@@ -2,16 +2,16 @@
 // File: GM_kanturu_1st.cpp
 //*****************************************************************************
 #include "stdafx.h"
-#include "ZzzInfomation.h"
-#include "ZzzBMD.h"
-#include "ZzzLodTerrain.h"
-#include "ZzzObject.h"
-#include "ZzzCharacter.h"
-#include "ZzzAI.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzLodTerrain.h"
+#include "Game/Engine/ZzzObject.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzAI.h"
+#include "Game/Engine/ZzzTexture.h"
 #include "UIWindows.h"
-#include "ZzzOpenData.h"
-#include "ZzzEffect.h"
+#include "Game/Engine/ZzzOpenData.h"
+#include "Game/Engine/ZzzEffect.h"
 #include "CDirection.h"
 #include "MapManager.h"
 #include "BoneManager.h"
@@ -621,7 +621,7 @@ bool M37Kanturu1st::AttackEffectKanturu1stMonster( CHARACTER* c, OBJECT* o, BMD*
       if ( o->CurrentAction == MONSTER01_ATTACK1 || o->CurrentAction == MONSTER01_ATTACK2 ) {
         if ( c->CheckAttackTime( 14 ) )
         //				if(o->AnimationFrame >= StartAction && o->AnimationFrame < (StartAction +
-        //fActionSpeed))
+        // fActionSpeed))
         {
           vec3_t vPos, vRelative, Light;
           Vector( 140.f, 0.f, -30.f, vRelative );

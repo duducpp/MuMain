@@ -29,8 +29,8 @@
 #include <objbase.h>
 #include <dsound.h>
 #include "DSwaveIO.h"
-#include "ZzzInfomation.h"
-#include "ZzzCharacter.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzCharacter.h"
 #include "DSPlaySound.h"
 
 namespace {

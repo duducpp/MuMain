@@ -4,11 +4,11 @@
 #include "stdafx.h"
 #include <process.h>
 #include "UIManager.h"
-#include "ZzzBMD.h"
-#include "ZzzInfomation.h"
-#include "ZzzCharacter.h"
-#include "ZzzInventory.h"
-#include "ZzzTexture.h"
+#include "Game/Engine/ZzzBMD.h"
+#include "Game/Engine/ZzzInfomation.h"
+#include "Game/Engine/ZzzCharacter.h"
+#include "Game/Engine/ZzzInventory.h"
+#include "Game/Engine/ZzzTexture.h"
 
 #include "npcBreeder.h"
 #include "GIPetManager.h"
