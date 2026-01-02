@@ -1,12 +1,12 @@
 #include "stdafx.h"
-#include "UIGuildInfo.h"
+#include "Interface/UI/UIGuildInfo.h"
 #include "PersonalShopTitleImp.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 #include "Game/Engine/ZzzTexture.h"
 #include "Game/Engine/ZzzInterface.h"
 
-#include "UIManager.h"
-#include "NewUI/System.h"
+#include "Interface/UI/UIManager.h"
+#include "Interface/NewUI/System.h"
 
 CPersonalShopTitleImp::CPersonalShopTitleImp()
     : m_iHighlightFrame( 0 )

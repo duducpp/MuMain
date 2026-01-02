@@ -9,7 +9,7 @@
 #include "Game/Engine/ZzzObject.h"
 #include "Game/Engine/ZzzCharacter.h"
 #include "Game/Engine/ZzzInfomation.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 #include "wglext.h"
 
 int     OpenglWindowX;

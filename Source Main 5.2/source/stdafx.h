@@ -92,8 +92,8 @@
 #include "Game/Core/w_WindowMessageHandler.h"
 #include "_GlobalFunctions.h"
 #include "_TextureIndex.h"
-#include "UIDefaultBase.h"
-#include "NewUI/Common.h"
+#include "Interface/UI/UIDefaultBase.h"
+#include "Interface/NewUI/Common.h"
 #include "./Math/ZzzMathLib.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 

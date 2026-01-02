@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "UIManager.h"
+#include "Interface/UI/UIManager.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 #include "Game/Engine/ZzzBMD.h"
 #include "Game/Engine/ZzzInfomation.h"

@@ -33,10 +33,10 @@ public:
   int     vOrder;                                            // 10. ���� �Ӽ� ���� (1:���� �Ӽ�, 9:���� �Ӽ�)
   int     DeleteFlag;                                        // 11. ���� ���� (143: ����, 144: Ȱ��)
   int     StorageGroup;                                      // 12. ������ �׷� ����
-  int     ShareFlag; // 13. ServerType(���� ����) �� ������ ���� ����
-                 // �׸� ����
-  wchar_t InGamePackageID[SHOPLIST_LENGTH_INGAMEPACKAGEID]; // 14. ������ �ڵ�
-  int     PropertySeq;                                      // 15. �Ӽ� �ڵ�
-  int     ProductType;                                      // 16. ��ǰ ���� �ڵ�
-  int     UnitType;                                         // 17. ���� �ڵ�
+  int     ShareFlag;                                         // 13. ServerType(���� ����) �� ������ ���� ����
+                                                             // �׸� ����
+  wchar_t InGamePackageID[SHOPLIST_LENGTH_INGAMEPACKAGEID];  // 14. ������ �ڵ�
+  int     PropertySeq;                                       // 15. �Ӽ� �ڵ�
+  int     ProductType;                                       // 16. ��ǰ ���� �ڵ�
+  int     UnitType;                                          // 17. ���� �ڵ�
 };

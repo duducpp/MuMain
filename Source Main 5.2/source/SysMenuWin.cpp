@@ -6,7 +6,7 @@
 #include "SysMenuWin.h"
 
 #include "Input.h"
-#include "UIMng.h"
+#include "Interface/UI/UIMng.h"
 #include "Game/Engine/ZzzInfomation.h"
 #include "Game/Engine/ZzzScene.h"
 

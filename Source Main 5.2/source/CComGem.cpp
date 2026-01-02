@@ -7,8 +7,8 @@
 #include <cstdint>
 
 #include "Game/Engine/ZzzInventory.h"
-#include "NewUI/InventoryCtrl.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/InventoryCtrl.h"
+#include "Interface/NewUI/System.h"
 
 extern DWORD g_dwActiveUIID;
 extern int   InventoryStartX;

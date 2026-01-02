@@ -12,7 +12,7 @@
 #include "CSPetSystem.h"
 #include "MapManager.h"
 #include "DuelMgr.h"
-#include "UIManager.h"
+#include "Interface/UI/UIManager.h"
 #include "Game/Engine/ZzzAI.h"
 #include "Game/Engine/ZzzBMD.h"
 #include "Game/Engine/ZzzCharacter.h"

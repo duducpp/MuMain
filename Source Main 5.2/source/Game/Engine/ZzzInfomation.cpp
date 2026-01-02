@@ -19,9 +19,9 @@
 #include "CSItemOption.h"
 #include "GIPetManager.h"
 #include "CComGem.h"
-#include "NewUI/InventoryCtrl.h"
+#include "Interface/NewUI/InventoryCtrl.h"
 #include "SocketSystem.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 #include "CharacterManager.h"
 #include "SkillManager.h"
 

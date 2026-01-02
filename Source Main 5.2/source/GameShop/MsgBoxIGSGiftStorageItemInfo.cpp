@@ -4,7 +4,7 @@
 
 #include "stdafx.h"
 
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 
 #ifdef KJH_ADD_INGAMESHOP_UI_SYSTEM
 

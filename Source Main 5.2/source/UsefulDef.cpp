@@ -8,7 +8,7 @@
 
 #include "stdafx.h"
 #include "UsefulDef.h"
-#include "UIControls.h"
+#include "Interface/UI/UIControls.h"
 
 bool ReduceStringByPixel( LPTSTR lpszDst, int nDstSize, LPCTSTR lpszSrc, int nPixel )
 {

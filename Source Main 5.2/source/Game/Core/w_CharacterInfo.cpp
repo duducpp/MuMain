@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include "Game/Core/w_CharacterInfo.h"
 #include "SkillManager.h"
-#include "NewUI/GensRanking.h"
+#include "Interface/NewUI/GensRanking.h"
 
 CHARACTER::CHARACTER()
 {

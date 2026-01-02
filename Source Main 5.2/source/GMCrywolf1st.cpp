@@ -1,5 +1,5 @@
 ﻿#include "stdafx.h"
-#include "UIWindows.h"
+#include "Interface/UI/UIWindows.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 #include "Game/Engine/ZzzTexture.h"
 #include "Game/Engine/ZzzBMD.h"
@@ -15,7 +15,7 @@
 #include "CSChaosCastle.h"
 #include "MapManager.h"
 #include "CharacterManager.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 #include "SkillManager.h"
 
 extern void MonsterMoveSandSmoke( OBJECT* o );
@@ -25,7 +25,7 @@ extern bool LogOut;
 
 BYTE m_AltarState[5] = { 2, 2, 2, 2, 2 };
 
-#include "UIControls.h"
+#include "Interface/UI/UIControls.h"
 
 bool    View_Bal           = false;
 char    Suc_Or_Fail        = -1;

@@ -7,15 +7,15 @@
 using namespace SEASON3B;
 
 #include "NewChaosCastleSystem.h"
-#include "UIWindows.h"
+#include "Interface/UI/UIWindows.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 #include "Game/Engine/ZzzTexture.h"
 #include "Game/Engine/ZzzLodTerrain.h"
 #include "Game/Engine/ZzzScene.h"
-#include "NewUI/CustomMessageBox.h"
+#include "Interface/NewUI/CustomMessageBox.h"
 #include "MapManager.h"
 #include "DSPlaySound.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 
 extern int   g_iChatInputType;
 extern int   g_iCustomMessageBoxButton[NUM_BUTTON_CMB][NUM_PAR_BUTTON_CMB];

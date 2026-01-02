@@ -7,8 +7,8 @@
 
 #include <dpapi.h>
 #include <clocale>
-#include "UIWindows.h"
-#include "UIManager.h"
+#include "Interface/UI/UIWindows.h"
+#include "Interface/UI/UIManager.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 #include "Game/Engine/ZzzTexture.h"
 #include "Game/Engine/ZzzOpenData.h"
@@ -29,7 +29,7 @@
 #include "Local.h"
 #include "PersonalShopTitleImp.h"
 
-#include "UIMapName.h" // rozy
+#include "Interface/UI/UIMapName.h" // rozy
 #include "./Utilities/CpuUsage.h"
 
 #include "MUHelper/MuHelper.h"
@@ -41,13 +41,13 @@
 #include <io.h>
 #include "Input.h"
 #include "./Time/Timer.h"
-#include "UIMng.h"
+#include "Interface/UI/UIMng.h"
 
 #include "Game/Core/w_MapHeaders.h"
 
 #include "Game/Core/w_PetProcess.h"
 
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 
 CUIMercenaryInputBox* g_pMercenaryInputBox    = nullptr;
 CUITextInputBox*      g_pSingleTextInputBox   = nullptr;

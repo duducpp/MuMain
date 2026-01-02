@@ -13,16 +13,16 @@
 #include "Game/Engine/ZzzEffect.h"
 #include "Game/Engine/ZzzLodTerrain.h"
 #include "BoneManager.h"
-#include "UIManager.h"
+#include "Interface/UI/UIManager.h"
 #include "CKANTURUDirection.h"
 #include "CDirection.h"
-#include "UIBaseDef.h"
+#include "Interface/UI/UIBaseDef.h"
 #include "MapManager.h"
 #include "DSPlaySound.h"
 
 #include "ChangeRingManager.h"
 #include "LoadData.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 
 CTrapCanon g_TrapCanon;
 

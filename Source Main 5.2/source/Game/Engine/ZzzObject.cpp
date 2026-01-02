@@ -23,7 +23,7 @@
 #include "CSItemOption.h"
 #include "CSChaosCastle.h"
 #include "MapManager.h"
-#include "UIManager.h"
+#include "Interface/UI/UIManager.h"
 #include "CDirection.h"
 #include "CComGem.h"
 #include "BoneManager.h"
@@ -31,7 +31,7 @@
 #include "CharacterManager.h"
 #include "Game/Core/w_MapHeaders.h"
 #include "MonkSystem.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 
 extern vec3_t VertexTransform[MAX_MESH][MAX_VERTICES];
 extern vec3_t LightTransform[MAX_MESH][MAX_VERTICES];

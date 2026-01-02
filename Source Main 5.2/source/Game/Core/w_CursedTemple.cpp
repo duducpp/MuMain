@@ -11,13 +11,13 @@
 #include "Game/Engine/ZzzCharacter.h"
 #include "Game/Engine/ZzzLodTerrain.h"
 #include "Game/Engine/ZzzEffect.h"
-#include "UIManager.h"
+#include "Interface/UI/UIManager.h"
 #include "CSParts.h"
 #include "DSPlaySound.h"
 #include "Game/Engine/ZzzOpenData.h"
-#include "UIControls.h"
-#include "NewUI/System.h"
-#include "NewUI/InventoryCtrl.h"
+#include "Interface/UI/UIControls.h"
+#include "Interface/NewUI/System.h"
+#include "Interface/NewUI/InventoryCtrl.h"
 #include "MapManager.h"
 
 extern int     TextNum;

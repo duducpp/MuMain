@@ -8,7 +8,7 @@
 #include "stdafx.h"
 #include "_enum.h"
 #include <eh.h>
-#include "UIManager.h"
+#include "Interface/UI/UIManager.h"
 #include "GuildCache.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 #include "Game/Engine/ZzzBMD.h"
@@ -45,7 +45,7 @@
 #include "Game/Core/w_PetProcess.h"
 #include "DuelMgr.h"
 #include "MonkSystem.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 
 CHARACTER*               CharactersClient;
 CHARACTER                CharacterView;

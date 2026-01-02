@@ -5,17 +5,17 @@
 #include "stdafx.h"
 #include "LoginWin.h"
 #include "Input.h"
-#include "UIMng.h"
+#include "Interface/UI/UIMng.h"
 #include "Game/Engine/ZzzBMD.h"
 #include "Game/Engine/ZzzInfomation.h"
 #include "Game/Engine/ZzzObject.h"
 #include "Game/Engine/ZzzCharacter.h"
 #include "Game/Engine/ZzzInterface.h"
-#include "UIControls.h"
+#include "Interface/UI/UIControls.h"
 #include "Game/Engine/ZzzScene.h"
 
 #include "DSPlaySound.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 
 #include "ServerListManager.h"
 #include <dpapi.h>

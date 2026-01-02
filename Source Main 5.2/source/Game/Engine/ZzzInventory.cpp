@@ -2,7 +2,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "UIManager.h"
+#include "Interface/UI/UIManager.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 #include "Game/Engine/ZzzBMD.h"
 #include "Game/Engine/ZzzLodTerrain.h"
@@ -33,13 +33,13 @@
 #include "CDirection.h"
 #include "ChangeRingManager.h"
 #include "MixMgr.h"
-#include "NewUI/CommonMessageBox.h"
-#include "NewUI/CustomMessageBox.h"
-#include "NewUI/InventoryCtrl.h"
+#include "Interface/NewUI/CommonMessageBox.h"
+#include "Interface/NewUI/CustomMessageBox.h"
+#include "Interface/NewUI/InventoryCtrl.h"
 #include "Game/Core/w_CursedTemple.h"
 #include "SocketSystem.h"
 #include "PortalMgr.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 #include "ServerListManager.h"
 #include <time.h>
 #include <unordered_set>
@@ -47,7 +47,7 @@
 #include "MapManager.h"
 #include "CharacterManager.h"
 #include "SkillManager.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 
 extern CUITextInputBox* g_pSingleTextInputBox;
 extern int              g_iChatInputType;

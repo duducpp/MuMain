@@ -2,7 +2,7 @@
 //  CSEventMatch.cpp
 //////////////////////////////////////////////////////////////////////////
 #include "stdafx.h"
-#include "UIWindows.h"
+#include "Interface/UI/UIWindows.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 #include "Game/Engine/ZzzBMD.h"
 #include "Game/Engine/ZzzLodTerrain.h"
@@ -10,8 +10,8 @@
 #include "Game/Engine/ZzzAI.h"
 #include "CSEventMatch.h"
 
-#include "NewUI/CustomMessageBox.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/CustomMessageBox.h"
+#include "Interface/NewUI/System.h"
 
 #include <algorithm>
 #include <chrono>

@@ -2,7 +2,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "UIManager.h"
+#include "Interface/UI/UIManager.h"
 #include "GuildCache.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 #include "Game/Engine/ZzzBMD.h"
@@ -26,24 +26,24 @@
 
 #include "CSQuest.h"
 #include "PersonalShopTitleImp.h"
-#include "UIControls.h"
+#include "Interface/UI/UIControls.h"
 #include "GOBoid.h"
 #include "CSItemOption.h"
 #include "npcBreeder.h"
 #include "CSPetSystem.h"
 #include "GIPetManager.h"
 #include "CComGem.h"
-#include "UIMapName.h" // rozy
+#include "Interface/UI/UIMapName.h" // rozy
 #include "./Time/Timer.h"
 #include "Input.h"
-#include "UIMng.h"
+#include "Interface/UI/UIMng.h"
 #include "LoadingScene.h"
 #include "CDirection.h"
 #include "Event.h"
 #include "MixMgr.h"
 
-#include "NewUI/System.h"
-#include "NewUI/CommonMessageBox.h"
+#include "Interface/NewUI/System.h"
+#include "Interface/NewUI/CommonMessageBox.h"
 #include "PartyManager.h"
 #include "Game/Core/w_CursedTemple.h"
 #include "CameraMove.h"

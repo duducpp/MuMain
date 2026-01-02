@@ -10,8 +10,8 @@
 #include "DSPlaySound.h"
 
 #include "MapManager.h"
-#include "NewUI/InventoryCtrl.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/InventoryCtrl.h"
+#include "Interface/NewUI/System.h"
 
 #include <algorithm>
 #include <cmath>

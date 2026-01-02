@@ -2,7 +2,7 @@
 //  GMHellas.cpp
 //////////////////////////////////////////////////////////////////////////
 #include "stdafx.h"
-#include "UIWindows.h"
+#include "Interface/UI/UIWindows.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 #include "Game/Engine/ZzzTexture.h"
 #include "Game/Engine/ZzzBMD.h"
@@ -15,7 +15,7 @@
 #include "PhysicsManager.h"
 #include "CSWaterTerrain.h"
 #include "DSPlaySound.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 #include "MapManager.h"
 #include "CharacterManager.h"
 #include "SkillManager.h"

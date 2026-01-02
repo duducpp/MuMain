@@ -8,7 +8,7 @@
 #pragma once
 
 #include "Game/Engine/ZzzTexture.h"
-#include "UIBaseDef.h"
+#include "Interface/UI/UIBaseDef.h"
 
 #define SPR_SIZING_DATUMS_LT 0x00
 #define SPR_SIZING_DATUMS_LB 0x01

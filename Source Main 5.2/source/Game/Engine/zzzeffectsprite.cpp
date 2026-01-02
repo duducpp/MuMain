@@ -13,7 +13,7 @@
 #include "Game/Engine/ZzzEffect.h"
 #include "DSPlaySound.h"
 #include "WSclient.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 
 #include <algorithm>
 

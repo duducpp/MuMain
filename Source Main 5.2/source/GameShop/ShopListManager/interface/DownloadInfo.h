@@ -109,8 +109,8 @@ private:
   DownloaderType m_DownloaderType;
   // 							�ٿ�ε� ��Ŷ ������ ���� default = 4096
   DWORD m_dwReadBufferSize;
-  //							Local File ������ ��� ����� ���� default
-  //= TRUE
+  //							Local File ������ ��� ����� ����
+  //default = TRUE
   BOOL m_bOverWrite;
   //							Passive ���� default = FALSE
   BOOL m_bPassive;

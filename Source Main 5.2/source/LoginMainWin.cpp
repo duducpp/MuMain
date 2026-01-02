@@ -6,7 +6,7 @@
 #include "LoginMainWin.h"
 
 #include "Input.h"
-#include "UIMng.h"
+#include "Interface/UI/UIMng.h"
 #include "WSclient.h"
 
 //=============================================================================

@@ -11,8 +11,8 @@
 #include "Game/Engine/ZzzInterface.h"
 #include "Game/Engine/ZzzInventory.h"
 #include "CharacterManager.h"
-#include "UIControls.h"
-#include "NewUI/System.h"
+#include "Interface/UI/UIControls.h"
+#include "Interface/NewUI/System.h"
 #include "SkillManager.h"
 #include "CSItemOption.h"
 

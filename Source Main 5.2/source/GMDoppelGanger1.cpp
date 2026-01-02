@@ -11,7 +11,7 @@
 #include "Game/Engine/ZzzOpenData.h"
 #include "Game/Engine/ZzzLodTerrain.h"
 #include "GOBoid.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 #include "MapManager.h"
 
 extern int GetMp3PlayPosition();

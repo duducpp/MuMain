@@ -7,7 +7,7 @@
 
 #include <crtdbg.h>
 
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 #include "UsefulDef.h"
 
 #define QM_NPCDIALOGUE_FILE L"Data\\Local\\NPCDialogue.bmd"

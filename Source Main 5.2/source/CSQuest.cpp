@@ -13,7 +13,7 @@
 #include <iterator>
 #include <vector>
 
-#include "UIManager.h"
+#include "Interface/UI/UIManager.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 #include "Game/Engine/ZzzInfomation.h"
 #include "Game/Engine/ZzzBMD.h"
@@ -26,9 +26,9 @@
 
 #include "CSQuest.h"
 #include "UsefulDef.h"
-#include "NewUI/InventoryCtrl.h"
+#include "Interface/NewUI/InventoryCtrl.h"
 #include "CharacterManager.h"
-#include "NewUI/System.h"
+#include "Interface/NewUI/System.h"
 
 bool           bCheckNPC = false;
 extern int     g_iMessageTextStart;

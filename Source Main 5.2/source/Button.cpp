@@ -16,7 +16,7 @@
 #include "Game/Engine/ZzzCharacter.h"
 #include "Game/Engine/ZzzInterface.h"
 #include "DSPlaySound.h"
-#include "UIControls.h"
+#include "Interface/UI/UIControls.h"
 
 namespace {
 constexpr float kDefaultTextOffset = 0.5f;
