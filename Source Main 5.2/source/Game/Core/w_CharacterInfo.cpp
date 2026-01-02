@@ -2,7 +2,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "w_CharacterInfo.h"
+#include "Game/Core/w_CharacterInfo.h"
 #include "SkillManager.h"
 #include "NewUI/GensRanking.h"
 

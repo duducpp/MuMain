@@ -18,7 +18,7 @@
 #include "WSclient.h"
 #include "CSChaosCastle.h"
 #include "MapManager.h"
-#include "w_MapHeaders.h"
+#include "Game/Core/w_MapHeaders.h"
 #include "NewUI/System.h"
 #include "Random.h"
 

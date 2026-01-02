@@ -43,9 +43,9 @@
 #include "./Time/Timer.h"
 #include "UIMng.h"
 
-#include "w_MapHeaders.h"
+#include "Game/Core/w_MapHeaders.h"
 
-#include "w_PetProcess.h"
+#include "Game/Core/w_PetProcess.h"
 
 #include "NewUI/System.h"
 

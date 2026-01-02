@@ -1,20 +1,27 @@
-// w_PetActionCollecter_Add.h: interface for the PetActionStand class.
+// w_PetActionCollecter.h: interface for the PetActionStand class.
 //////////////////////////////////////////////////////////////////////
-
-#ifdef PJH_ADD_PANDA_PET
-
-#include "w_PetAction.h"
-#include "Game/Engine/ZzzBMD.h"
-#include "w_PetActionCollecter.h"
 
 #pragma once
 
-SmartPointer( PetActionCollecterAdd );
-class PetActionCollecterAdd : public PetAction
+#include "Game/Core/w_PetAction.h"
+#include "Game/Engine/ZzzBMD.h"
+
+#define SEARCH_LENGTH 300.0f
+#define CIRCLE_STAND_RADIAN 50.0f
+#define CIRCLE_GETITEM_RADIAN 50.0f
+
+typedef struct _RootingItem
+{
+  int    itemIndex;
+  vec3_t position;
+} RootingItem;
+
+SmartPointer( PetActionCollecter );
+class PetActionCollecter : public PetAction
 {
 public:
-  static PetActionCollecterAddPtr Make();
-  virtual ~PetActionCollecterAdd();
+  static PetActionCollecterPtr Make();
+  virtual ~PetActionCollecter();
   virtual bool Release( OBJECT* obj, CHARACTER* Owner );
 
 public:
@@ -39,41 +46,14 @@ public:
     eAction_End_NotUse,
   };
 
-protected:
-  PetActionCollecterAdd();
-
-  // test
-
-  // ItemList m_ItemList;
+private:
+  PetActionCollecter();
   RootingItem m_RootItem;
   bool        m_isRooting;
-
   DWORD       m_dwSendDelayTime;
   DWORD       m_dwRootingTime;
   DWORD       m_dwRoundCountDelay;
   ActionState m_state;
-
-  double m_fRadWidthStand;
-  double m_fRadWidthGet;
-
-  // test
-};
-#endif // PJH_ADD_PANDA_PET
-
-SmartPointer( PetActionCollecterSkeleton );
-class PetActionCollecterSkeleton : public PetActionCollecterAdd
-{
-public:
-  static PetActionCollecterSkeletonPtr Make();
-  virtual ~PetActionCollecterSkeleton();
-  virtual bool Release( OBJECT* obj, CHARACTER* Owner );
-
-public:
-  virtual bool Move( OBJECT* obj, CHARACTER* Owner, int targetKey, double tick, bool bForceRender );
-  virtual bool Effect( OBJECT* obj, CHARACTER* Owner, int targetKey, double tick, bool bForceRender );
-
-protected:
-  PetActionCollecterSkeleton();
-
-  BOOL m_bIsMoving;
+  double      m_fRadWidthStand;
+  double      m_fRadWidthGet;
 };

@@ -7,7 +7,7 @@
 
 #include <memory>
 
-#include "w_BaseMap.h"
+#include "Game/Core/w_BaseMap.h"
 #include "_struct.h"
 
 class BMD;

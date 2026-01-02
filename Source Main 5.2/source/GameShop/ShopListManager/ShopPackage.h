@@ -56,8 +56,8 @@ public:
   wchar_t Caution[SHOPLIST_LENGTH_PACKAGECAUTION];         //  8. ���� ����
   int SalesFlag; //  9. ���� ���� ����(���Ź�ư ���⿩��) (182:����,
                  //  183:�Ұ�)
-  int GiftFlag; // 10. ���� ���� ����(������ư ���⿩��) (184:����,
-                // 185:�Ұ�)
+  int GiftFlag;  // 10. ���� ���� ����(������ư ���⿩��)
+                // (184:����, 185:�Ұ�)
   tm      StartDate;                                        // 11. �Ǹ� ������
   tm      EndDate;                                          // 12. �Ǹ� ������
   int     CapsuleFlag;                                      // 13. ĸ�� ��ǰ ���� (176:ĸ��, 177:�Ϲ�)

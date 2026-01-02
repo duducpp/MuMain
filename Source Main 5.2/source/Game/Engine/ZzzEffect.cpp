@@ -473,7 +473,8 @@ void CreateEffect( int Type, vec3_t Position, vec3_t Angle, vec3_t Light, int Su
                               */
           //					CreateJoint ( BITMAP_JOINT_FORCE, o->Position, o->Position, o->Angle, 7,
           // o, 150.f, 40 ); 					CreateJoint ( BITMAP_FLARE+1, o->Position, o->Position,
-          // o->Angle, 14, o, 50.f, 40 ); 					CreateJoint(BITMAP_JOINT_ENERGY,o->Position,o->Position,o->Angle,5,o,100.f);
+          // o->Angle, 14, o, 50.f, 40 );
+          // CreateJoint(BITMAP_JOINT_ENERGY,o->Position,o->Position,o->Angle,5,o,100.f);
           //					CreateJoint(BITMAP_JOINT_HEALING, o->Position, o->Position, o->Angle,
           // 14, o, 30.f);
         } break;

@@ -11,7 +11,7 @@
 #include "BoneManager.h"
 #include "Game/Engine/ZzzLodTerrain.h"
 
-#include "w_MapHeaders.h"
+#include "Game/Core/w_MapHeaders.h"
 #include "DSPlaySound.h"
 
 using namespace SEASON4A;

@@ -1000,55 +1000,55 @@
     <ClCompile Include="WSclient.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_BasePet.cpp">
+    <ClCompile Include="Game\Core\w_BasePet.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_Buff.cpp">
+    <ClCompile Include="Game\Core\w_Buff.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_BuffScriptLoader.cpp">
+    <ClCompile Include="Game\Core\w_BuffScriptLoader.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_BuffStateSystem.cpp">
+    <ClCompile Include="Game\Core\w_BuffStateSystem.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_BuffStateValueControl.cpp">
+    <ClCompile Include="Game\Core\w_BuffStateValueControl.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_BuffTimeControl.cpp">
+    <ClCompile Include="Game\Core\w_BuffTimeControl.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_CharacterInfo.cpp">
+    <ClCompile Include="Game\Core\w_CharacterInfo.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_CursedTemple.cpp">
+    <ClCompile Include="Game\Core\w_CursedTemple.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_MapProcess.cpp">
+    <ClCompile Include="Game\Core\w_MapProcess.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_ObjectInfo.cpp">
+    <ClCompile Include="Game\Core\w_ObjectInfo.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_PetActionCollecter.cpp">
+    <ClCompile Include="Game\Core\w_PetActionCollecter.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_PetActionCollecter_Add.cpp">
+    <ClCompile Include="Game\Core\w_PetActionCollecter_Add.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_PetActionDemon.cpp">
+    <ClCompile Include="Game\Core\w_PetActionDemon.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_PetActionRound.cpp">
+    <ClCompile Include="Game\Core\w_PetActionRound.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_PetActionStand.cpp">
+    <ClCompile Include="Game\Core\w_PetActionStand.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_PetActionUnicorn.cpp">
+    <ClCompile Include="Game\Core\w_PetActionUnicorn.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="w_PetProcess.cpp">
+    <ClCompile Include="Game\Core\w_PetProcess.cpp">
       <Filter>MU\Client\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Game\Engine\ZzzAI.cpp">
@@ -1989,67 +1989,67 @@
     <ClInclude Include="WSclient.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_BaseMap.h">
+    <ClInclude Include="Game\Core\w_BaseMap.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_BasePet.h">
+    <ClInclude Include="Game\Core\w_BasePet.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_Buff.h">
+    <ClInclude Include="Game\Core\w_Buff.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_BuffScriptLoader.h">
+    <ClInclude Include="Game\Core\w_BuffScriptLoader.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_BuffStateSystem.h">
+    <ClInclude Include="Game\Core\w_BuffStateSystem.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_BuffStateValueControl.h">
+    <ClInclude Include="Game\Core\w_BuffStateValueControl.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_BuffTimeControl.h">
+    <ClInclude Include="Game\Core\w_BuffTimeControl.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_CharacterInfo.h">
+    <ClInclude Include="Game\Core\w_CharacterInfo.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_CursedTemple.h">
+    <ClInclude Include="Game\Core\w_CursedTemple.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_MapHeaders.h">
+    <ClInclude Include="Game\Core\w_MapHeaders.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_MapProcess.h">
+    <ClInclude Include="Game\Core\w_MapProcess.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_ObjectInfo.h">
+    <ClInclude Include="Game\Core\w_ObjectInfo.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_PetAction.h">
+    <ClInclude Include="Game\Core\w_PetAction.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_PetActionCollecter.h">
+    <ClInclude Include="Game\Core\w_PetActionCollecter.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_PetActionCollecter_Add.h">
+    <ClInclude Include="Game\Core\w_PetActionCollecter_Add.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_PetActionDemon.h">
+    <ClInclude Include="Game\Core\w_PetActionDemon.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_PetActionRound.h">
+    <ClInclude Include="Game\Core\w_PetActionRound.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_PetActionStand.h">
+    <ClInclude Include="Game\Core\w_PetActionStand.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_PetActionUnicorn.h">
+    <ClInclude Include="Game\Core\w_PetActionUnicorn.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_PetProcess.h">
+    <ClInclude Include="Game\Core\w_PetProcess.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="w_WindowMessageHandler.h">
+    <ClInclude Include="Game\Core\w_WindowMessageHandler.h">
       <Filter>MU\Client\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Game\Engine\ZzzAI.h">

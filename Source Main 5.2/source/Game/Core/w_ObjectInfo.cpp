@@ -2,7 +2,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "w_ObjectInfo.h"
+#include "Game/Core/w_ObjectInfo.h"
 
 void CInterpolateContainer::GetCurrentValue( vec3_t& v3Out, float fCurrentRate, VEC_INTERPOLATES& vecInterpolates )
 {

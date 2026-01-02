@@ -89,7 +89,7 @@
 #include "_enum.h"
 #include "_types.h"
 #include "_struct.h"
-#include "w_WindowMessageHandler.h"
+#include "Game/Core/w_WindowMessageHandler.h"
 #include "_GlobalFunctions.h"
 #include "_TextureIndex.h"
 #include "UIDefaultBase.h"
@@ -103,7 +103,7 @@
 #include "./Utilities/Log/ErrorReport.h"
 #include "./Utilities/Log/WindowsConsole.h"
 
-#include "w_MapHeaders.h"
+#include "Game/Core/w_MapHeaders.h"
 
 #include "_crypt.h"
 

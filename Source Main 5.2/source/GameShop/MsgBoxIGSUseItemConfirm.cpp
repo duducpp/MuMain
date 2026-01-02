@@ -140,8 +140,8 @@ CALLBACK_RESULT CMsgBoxIGSUseItemConfirm::OKButtonDown( class CNewUIMessageBoxBa
 {
   auto* pOwnMsgBox = dynamic_cast<CMsgBoxIGSUseItemConfirm*>( pOwner );
 
-  // ��������� ����Ϸ��� ����Ÿ���� ������ ��� �޼���
-  // ó��
+  // ��������� ����Ϸ��� ����Ÿ���� ������ ���
+  // �޼��� ó��
   BuffScriptLoader& pBuffInfo                   = TheBuffInfo();
   int               iBuffType                   = pBuffInfo.GetBuffType( pOwnMsgBox->m_wItemCode );
   wchar_t           szBuffName[MAX_TEXT_LENGTH] = {

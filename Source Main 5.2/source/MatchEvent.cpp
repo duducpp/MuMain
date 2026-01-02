@@ -7,7 +7,7 @@
 #include "Game/Engine/ZzzScene.h"
 #include "MatchEvent.h"
 #include "MapManager.h"
-#include "w_CursedTemple.h"
+#include "Game/Core/w_CursedTemple.h"
 
 extern int g_iCustomMessageBoxButton[NUM_BUTTON_CMB][NUM_PAR_BUTTON_CMB];
 

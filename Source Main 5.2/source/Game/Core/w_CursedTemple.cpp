@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "w_CursedTemple.h"
+#include "Game/Core/w_CursedTemple.h"
 #include "Game/Engine/ZzzOpenglUtil.h"
 #include "Game/Engine/ZzzTexture.h"
 #include "Game/Engine/ZzzBMD.h"

@@ -5,7 +5,7 @@
 #include "Game/Engine/ZzzInfomation.h"
 #include "UIManager.h"
 #include "ItemAddOptioninfo.h"
-#include "w_BuffTimeControl.h"
+#include "Game/Core/w_BuffTimeControl.h"
 
 BuffTimeControlPtr BuffTimeControl::Make()
 {

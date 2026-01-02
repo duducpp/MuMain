@@ -6,7 +6,7 @@
 #include "NewUI/CustomMessageBox.h"
 #include "DSPlaySound.h"
 #include "CSChaosCastle.h"
-#include "w_CursedTemple.h"
+#include "Game/Core/w_CursedTemple.h"
 #include "Game/Engine/ZzzInterface.h"
 #include "Game/Engine/ZzzLodTerrain.h"
 

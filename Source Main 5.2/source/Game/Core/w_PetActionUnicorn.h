@@ -3,9 +3,9 @@
 
 #pragma once
 
-#include "w_PetAction.h"
+#include "Game/Core/w_PetAction.h"
 #include "Game/Engine/ZzzBMD.h"
-#include "w_PetActionCollecter.h"
+#include "Game/Core/w_PetActionCollecter.h"
 
 SmartPointer( PetActionUnicorn );
 class PetActionUnicorn : public PetAction

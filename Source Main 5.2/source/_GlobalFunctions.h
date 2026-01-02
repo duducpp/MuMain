@@ -2,7 +2,7 @@
 #define _GLOBAL_FUNCTIONS_H
 
 #include "Game/Engine/ZzzScene.h"
-#include "w_BuffStateSystem.h"
+#include "Game/Core/w_BuffStateSystem.h"
 
 class BuffStateSystem;
 class BuffScriptLoader;

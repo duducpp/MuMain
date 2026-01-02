@@ -2,13 +2,13 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "w_PetActionStand.h"
-#include "w_PetActionRound.h"
-#include "w_PetActionDemon.h"
-#include "w_PetActionCollecter.h"
-#include "w_PetActionCollecter_Add.h"
-#include "w_PetActionUnicorn.h"
-#include "w_PetProcess.h"
+#include "Game/Core/w_PetActionStand.h"
+#include "Game/Core/w_PetActionRound.h"
+#include "Game/Core/w_PetActionDemon.h"
+#include "Game/Core/w_PetActionCollecter.h"
+#include "Game/Core/w_PetActionCollecter_Add.h"
+#include "Game/Core/w_PetActionUnicorn.h"
+#include "Game/Core/w_PetProcess.h"
 #include "ReadScript.h"
 
 PetInfoPtr PetInfo::Make()

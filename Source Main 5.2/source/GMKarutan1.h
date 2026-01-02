@@ -13,7 +13,7 @@
 
 #ifdef ASG_ADD_MAP_KARUTAN
 
-#include "w_BaseMap.h"
+#include "Game/Core/w_BaseMap.h"
 
 SmartPointer( CGMKarutan1 );
 

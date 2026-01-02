@@ -6,7 +6,7 @@
 #include "Game/Engine/ZzzCharacter.h"
 #include "Game/Engine/ZzzAI.h"
 #include "Game/Engine/ZzzEffect.h"
-#include "w_MapHeaders.h"
+#include "Game/Core/w_MapHeaders.h"
 #include "DSPlaySound.h"
 #include "Game/Engine/ZzzOpenData.h"
 #include "Game/Engine/ZzzLodTerrain.h"

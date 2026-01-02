@@ -3,11 +3,11 @@
 
 #pragma once
 
-#include "w_Buff.h"
+#include "Game/Core/w_Buff.h"
 
-#include "w_ObjectInfo.h"
+#include "Game/Core/w_ObjectInfo.h"
 class OBJECT;
-#include "w_CharacterInfo.h"
+#include "Game/Core/w_CharacterInfo.h"
 class CHARACTER;
 
 namespace SEASON3B {

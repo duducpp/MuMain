@@ -19,6 +19,6 @@ private:
   std::vector<std::wstring>           tokens;    // ��ū�� ���Ϳ� ����
   std::vector<std::wstring>::iterator index;     // ���Ϳ� ���� �ݺ���
 
-  void split(); // ��Ʈ���� �����ڷ� ������ ���Ϳ� ����
+  void split();                                     // ��Ʈ���� �����ڷ� ������ ���Ϳ� ����
   void IsNullString( std::wstring::size_type pos ); // ��ū�� ���� ������ ���Ϳ� �ΰ� �־��ֱ�
 };

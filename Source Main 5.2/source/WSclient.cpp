@@ -41,7 +41,7 @@
 #include "NewUI/CommonMessageBox.h"
 #include "NewUI/CustomMessageBox.h"
 #include "NewUI/InventoryCtrl.h"
-#include "w_CursedTemple.h"
+#include "Game/Core/w_CursedTemple.h"
 #include "SummonSystem.h"
 
 #include "CharacterManager.h"
@@ -52,9 +52,9 @@
 #include "GameShop/MsgBoxIGSCommon.h"
 #endif // KJH_ADD_INGAMESHOP_UI_SYSTEM
 
-#include "w_MapHeaders.h"
+#include "Game/Core/w_MapHeaders.h"
 
-#include "w_PetProcess.h"
+#include "Game/Core/w_PetProcess.h"
 #include "PortalMgr.h"
 #include "DuelMgr.h"
 
@@ -5316,7 +5316,7 @@ BOOL ReceiveTalk( const BYTE* ReceiveBuffer, BOOL bEncrypted )
       // int iDummyRate[6];	// 광장표 확률을 서버에서 받으나 사용하지 않고 버림
       // for ( int i = 0; i < 6; ++i)
       //	iDummyRate[i] = ( int)pbyChaosRate[i];	// 광장표 확률을 서버에서 받으나 사용하지 않고
-      //버림(스크립트사용)
+      // 버림(스크립트사용)
       break;
 
     case 4:

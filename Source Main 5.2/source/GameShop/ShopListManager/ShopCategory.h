@@ -20,12 +20,12 @@ public:
 
   bool SetCategory( std::wstring strdata );
 
-  void SetCategoryFirst(); // ���� ī�װ��� ����� ù ��° �׷��� ����Ű����
-                           // �����Ѵ�.
+  void SetCategoryFirst(); // ���� ī�װ��� ����� ù ��° �׷���
+                           // ����Ű���� �����Ѵ�.
   bool GetCategoryNext( int& CategorySeq ); // ���� ī�װ��� ��ȣ�� �����ϰ� ���� ���� ī�װ��� ��ȣ�� ����Ų��.
 
-  void SetPackagSeqFirst(); // ī�װ����� ��ϵǾ� �ִ� ��Ű�� ����� ù ��° �׸��� ����Ű����
-                            // �����Ѵ�.
+  void SetPackagSeqFirst(); // ī�װ����� ��ϵǾ� �ִ� ��Ű�� ����� ù ��° �׸���
+                            // ����Ű���� �����Ѵ�.
   bool GetPackagSeqNext( int& PackagSeq ); // ��Ű�� ��ȣ�� �����ϰ� ���� ��Ű�� ��ȣ�� ����Ų��.
 
   void AddPackageSeq( int PackageSeq );

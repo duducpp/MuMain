@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "w_BaseMap.h"
+#include "Game/Core/w_BaseMap.h"
 #include "MapManager.h"
 
 SmartPointer( MapProcess );

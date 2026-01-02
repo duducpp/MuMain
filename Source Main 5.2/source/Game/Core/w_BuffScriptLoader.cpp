@@ -6,7 +6,7 @@
 #include "ReadScript.h"
 #include "UIManager.h"
 #include "ItemAddOptioninfo.h"
-#include "w_BuffScriptLoader.h"
+#include "Game/Core/w_BuffScriptLoader.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction

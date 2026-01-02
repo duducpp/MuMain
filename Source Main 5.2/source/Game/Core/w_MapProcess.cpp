@@ -2,8 +2,8 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "w_MapProcess.h"
-#include "w_MapHeaders.h"
+#include "Game/Core/w_MapProcess.h"
+#include "Game/Core/w_MapHeaders.h"
 
 MapProcessPtr g_MapProcess;
 

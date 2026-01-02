@@ -2,7 +2,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "w_BasePet.h"
+#include "Game/Core/w_BasePet.h"
 #include "Game/Engine/ZzzLodTerrain.h"
 #include "Game/Engine/ZzzObject.h"
 #include "Game/Engine/ZzzAI.h"

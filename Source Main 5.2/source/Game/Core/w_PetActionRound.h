@@ -1,17 +1,18 @@
-// w_PetActionStand.h: interface for the PetActionStand class.
+// w_PetActionRound.h: interface for the PetActionRound class.
 //////////////////////////////////////////////////////////////////////
+
 #pragma once
 
-#include "w_PetAction.h"
+#include "Game/Core/w_PetAction.h"
 #include "Game/Engine/ZzzBMD.h"
 
-SmartPointer( PetActionStand );
+SmartPointer( PetActionRound );
 
-class PetActionStand : public PetAction
+class PetActionRound : public PetAction
 {
 public:
-  static PetActionStandPtr Make();
-  virtual ~PetActionStand();
+  static PetActionRoundPtr Make();
+  virtual ~PetActionRound();
   virtual bool Release( OBJECT* obj, CHARACTER* Owner );
 
 public:
@@ -20,5 +21,5 @@ public:
   virtual bool Effect( OBJECT* obj, CHARACTER* Owner, int targetKey, double tick, bool bForceRender );
 
 private:
-  PetActionStand();
+  PetActionRound();
 };

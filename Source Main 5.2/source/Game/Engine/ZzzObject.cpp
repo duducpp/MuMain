@@ -27,9 +27,9 @@
 #include "CDirection.h"
 #include "CComGem.h"
 #include "BoneManager.h"
-#include "w_CursedTemple.h"
+#include "Game/Core/w_CursedTemple.h"
 #include "CharacterManager.h"
-#include "w_MapHeaders.h"
+#include "Game/Core/w_MapHeaders.h"
 #include "MonkSystem.h"
 #include "NewUI/System.h"
 

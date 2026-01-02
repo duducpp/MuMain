@@ -14,7 +14,7 @@
 #include "Game/Engine/ZzzOpenData.h"
 #include "DuelMgr.h"
 #include "NewUI/System.h"
-#include "w_CursedTemple.h"
+#include "Game/Core/w_CursedTemple.h"
 
 extern int  DeleteIndex;
 extern int  AppointStatus;

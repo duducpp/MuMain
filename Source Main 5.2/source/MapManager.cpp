@@ -17,7 +17,7 @@
 #include "Game/Engine/ZzzObject.h"
 #include "Game/Engine/ZzzOpenData.h"
 #include "Game/Engine/ZzzTexture.h"
-#include "w_CursedTemple.h"
+#include "Game/Core/w_CursedTemple.h"
 #include "WSclient.h"
 
 CMapManager gMapManager;

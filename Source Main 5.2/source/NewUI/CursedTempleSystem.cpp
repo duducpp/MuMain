@@ -19,7 +19,7 @@
 #include "UIControls.h"
 #include "Game/Engine/ZzzAI.h"
 #include "Game/Engine/ZzzEffect.h"
-#include "w_CursedTemple.h"
+#include "Game/Core/w_CursedTemple.h"
 #include "MapManager.h"
 #include "NewUI/InventoryCtrl.h"
 #include "NewUI/System.h"

@@ -1,8 +1,8 @@
 #pragma once
 
-#include "w_BuffStateValueControl.h"
-#include "w_BuffTimeControl.h"
-#include "w_BuffScriptLoader.h"
+#include "Game/Core/w_BuffStateValueControl.h"
+#include "Game/Core/w_BuffTimeControl.h"
+#include "Game/Core/w_BuffScriptLoader.h"
 
 SmartPointer( BuffStateSystem );
 class BuffStateSystem : public util::WindowMessageHandler

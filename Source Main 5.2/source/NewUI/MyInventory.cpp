@@ -18,7 +18,7 @@
 #include "UIManager.h"
 #include "CSItemOption.h"
 #include "MapManager.h"
-#include "w_PetProcess.h"
+#include "Game/Core/w_PetProcess.h"
 #include "SocketSystem.h"
 #include "PortalMgr.h"
 #ifdef CSK_FIX_BLUELUCKYBAG_MOVECOMMAND

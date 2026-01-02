@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "w_Buff.h"
+#include "Game/Core/w_Buff.h"
 
 namespace {
 void GetTokenBufflist( std::list<eBuffState>& outtokenbufflist, const eBuffState curbufftype )

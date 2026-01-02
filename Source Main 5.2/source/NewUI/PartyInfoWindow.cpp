@@ -7,7 +7,7 @@
 #include "NewUI/System.h"
 #include "CSChaosCastle.h"
 #include "DSPlaySound.h"
-#include "w_CursedTemple.h"
+#include "Game/Core/w_CursedTemple.h"
 #include "MapManager.h"
 
 using namespace SEASON3B;

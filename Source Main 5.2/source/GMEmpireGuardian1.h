@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #pragma once
-#include "w_BaseMap.h"
+#include "Game/Core/w_BaseMap.h"
 
 SmartPointer( GMEmpireGuardian1 );
 

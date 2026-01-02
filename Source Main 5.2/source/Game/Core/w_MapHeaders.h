@@ -1,7 +1,7 @@
 // w_MapHeaders.h: interface for the BaseMap class.
 //////////////////////////////////////////////////////////////////////
 #pragma once
-#include "w_MapProcess.h"
+#include "Game/Core/w_MapProcess.h"
 #include "MapManager.h"
 
 template<typename T>

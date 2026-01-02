@@ -1,7 +1,7 @@
 // GMDoppelGanger3.h: interface for the GMDoppelGanger3 class.
 //////////////////////////////////////////////////////////////////////
 #pragma once
-#include "w_BaseMap.h"
+#include "Game/Core/w_BaseMap.h"
 
 SmartPointer( CGMDoppelGanger3 );
 class CGMDoppelGanger3 : public BaseMap

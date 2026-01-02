@@ -36,7 +36,7 @@
 #include "NewUI/CommonMessageBox.h"
 #include "NewUI/CustomMessageBox.h"
 #include "NewUI/InventoryCtrl.h"
-#include "w_CursedTemple.h"
+#include "Game/Core/w_CursedTemple.h"
 #include "SocketSystem.h"
 #include "PortalMgr.h"
 #include "NewUI/System.h"

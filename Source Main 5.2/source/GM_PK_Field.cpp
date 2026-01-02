@@ -15,7 +15,7 @@
 #include "Game/Engine/ZzzAI.h"
 #include "Game/Engine/ZzzEffect.h"
 #include "Game/Engine/ZzzOpenData.h"
-#include "w_MapHeaders.h"
+#include "Game/Core/w_MapHeaders.h"
 #include "DSPlaySound.h"
 #include "Random.h"
 

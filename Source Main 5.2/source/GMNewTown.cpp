@@ -21,8 +21,8 @@
 #include "SkillManager.h"
 #include "_enum.h"
 
-#include "w_BaseMap.h"
-#include "w_MapHeaders.h"
+#include "Game/Core/w_BaseMap.h"
+#include "Game/Core/w_MapHeaders.h"
 
 using namespace SEASON3B;
 

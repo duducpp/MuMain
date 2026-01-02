@@ -3,8 +3,8 @@
 
 #pragma once
 
-#include "w_BasePet.h"
-#include "w_PetAction.h"
+#include "Game/Core/w_BasePet.h"
+#include "Game/Core/w_PetAction.h"
 
 #define PC4_ELF 1
 #define PC4_TEST 2
